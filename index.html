@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>William M. Wang</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Icons -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="/assets/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/assets/fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
+    <link href="/assets/fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
+    <!-- Other -->
     <link rel="stylesheet" href="index.css">
     <meta name="author" content="Will Wang">
 </head>
@@ -22,14 +26,14 @@
         <div id="img_here"></div>
     </div>
 
-    <header id="header" class="animated slideInDown" style="animation-delay:0.1s;">
+    <header id="header" class="animate__animated animate__slideInDown" style="animation-delay:0.1s;">
         <table>
             <tr>
-                <td id="logo">williammawang.</td>
+                <td id="logo"><a href="https://williammawang.com" style="text-decoration:none">williammawang.</a></td>
                 <td id="navigation">
                     <a href="#bio">about</a>
                     <a href="#work">work</a>
-                    <a href="">blog</a>
+                    <a href="">learn</a>
                     <a href="#contact">contact</a>
                 </td>
             </tr>
@@ -38,25 +42,33 @@
 
     <table id="top_part">
         <tr>
-            <td id="about" class="animated slideInLeft" style="animation-delay:0.1s;">
-                <h1>Hi, My name is William.</h1>
+            <td id="about" class="animate__animated animate__slideInLeft" style="animation-delay:0.1s;">
+                <h1>Hi, My name is William Wang.</h1>
                 <h2>It's nice to meet you.</h2>
 
-                <a href="/resume.pdf" className="resume-link">
-                    <button class="btn_one">Resumé</button><br>
-                </a>
+                <a href="/resume.pdf" class="btn_one" style="text-decoration:none">Resumé</a>
 
                 <table>
                     <tr>
-                        <td class="animated zoomIn" style="animation-delay:0.8s;"><a class="social"><i class="fab fa-home"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:1.0s;"><a class="social"><i class="fab fa-github"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:1.2s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:1.4s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
-                        <td class="animated zoomIn" style="animation-delay:1.6s;"><a class="social"><i class="fab fa-medium"></i></a></td>
+                        <td class="animate__animated animate__zoomIn" style="animation-delay:0.9s;">
+                            <a href="mailto:wmwang@wisc.edu" class="social"><i class="fa-solid fa-envelope"></i>
+                        </td>
+                        <td class="animate__animated animate__zoomIn" style="animation-delay:1.1s;">
+                            <a href="https://linkedin.com/in/williammawang" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                        </td>
+                        <td class="animate__animated animate__zoomIn" style="animation-delay:1.3s;">
+                            <a href="https://instagram.com/chinese.gala" class="social"><i class="fab fa-instagram"></i></a>
+                        </td>
+                        <td class="animate__animated animate__zoomIn" style="animation-delay:1.5s;">
+                            <a href="https://github.com/Chinesegala" class="social"><i class="fab fa-github"></i></a>
+                        </td>
+                        <td class="animate__animated animate__zoomIn" style="animation-delay:1.7s;">
+                            <a href="https://open.spotify.com/user/21zdwau7mfrwuuywowr5uczci" class="social"><i class="fa-brands fa-spotify"></i></a>
+                        </td>
                     </tr>
                 </table>
             </td>
-            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:0.2s;"></td>
+            <td id="rightImage" class="animate__animated animate__jackInTheBox" style="animation-delay:0.2s;"></td>
         </tr>
     </table>
 
