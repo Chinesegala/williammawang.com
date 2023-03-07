@@ -1,5 +1,6 @@
 var width = $(window).width(); 
 window.onscroll = function(){
+// Sets nav bar to fixed when page width exceeds #
 if ((width >= 1000)){
     if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         $("#header").css("background","#302f2f");
@@ -11,6 +12,7 @@ if ((width >= 1000)){
         },function(){
             $(this).css("border-bottom","2px solid transparent");
         });
+// Otherwise nav bar stays static
     }else{
         $("#header").css("background","transparent");
         $("#header").css("color","#fff");
@@ -28,25 +30,25 @@ if ((width >= 1000)){
 function magnify(imglink){
     $("#img_here").css("background",`url('${imglink}') center center`);
     $("#magnify").css("display","flex");
-    $("#magnify").addClass("animated fadeIn");
+    $("#magnify").addClass("animate__animated animate__fadeIn");
     setTimeout(function(){
-        $("#magnify").removeClass("animated fadeIn");
+        $("#magnify").removeClass("animate__animated animate__fadeIn");
     },800);
 }
 
 function closemagnify(){
-    $("#magnify").addClass("animated fadeOut");
+    $("#magnify").addClass("animate__animated animate__fadeOut");
     setTimeout(function(){
         $("#magnify").css("display","none");
-        $("#magnify").removeClass("animated fadeOut");
+        $("#magnify").removeClass("animate__animated animate__fadeOut");
         $("#img_here").css("background",`url('') center center`);
     },800);
 }
 
 setTimeout(function(){
-    $("#loading").addClass("animated fadeOut");
+    $("#loading").addClass("animate__animated animate__fadeOut");
     setTimeout(function(){
-      $("#loading").removeClass("animated fadeOut");
+      $("#loading").removeClass("animate__animated animate__fadeOut");
       $("#loading").css("display","none");
     },800);
 },1650);
