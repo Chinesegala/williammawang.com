@@ -6,7 +6,6 @@
     color: #eee;
     background: #262525;
   }
-
   body a {
     color: #809fff;
   }
@@ -103,7 +102,7 @@ header table {
 #top_part tr td {
   width: 50%;
 }
-#about {
+#hello {
   width: 84% !important;
   height: 95vh;
   display: flex;
@@ -112,15 +111,15 @@ header table {
   text-align: left;
   padding: 0px 8%;
 }
-#about h1 {
+#hello h1 {
   font-size: 45px;
   word-wrap: break-word;
 }
-#about table {
+#hello table {
   width: 70%;
   margin-top: 4vh;
 }
-#about table tr td {
+#hello table tr td {
   width: 20% !important;
   text-align: left;
 }
@@ -291,6 +290,7 @@ header table {
 #footer {
   width: 100%;
   padding: 10vh 0px;
+  padding-bottom: 30px;
   text-align: center;
   font-weight: bold;
 }
@@ -367,18 +367,18 @@ button:focus {
     width: 100%;
     text-align: center;
   }
-  #about {
+  #hello {
     width: 92% !important;
     height: 75vh;
     padding-top: 20vh !important;
     text-align: center;
     padding: 0px 4%;
   }
-  #about table {
+  #hello table {
     width: 100%;
     margin-top: 6vh;
   }
-  #about table tr td {
+  #hello table tr td {
     text-align: center;
   }
   .btn_one {
