@@ -80,11 +80,12 @@ $(document).ready(function () {
   });
 });
 
+// Back to top function //
 var button = document.getElementById("back-to-top");
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 700) {
     button.style.opacity = "1";
-    document.getElementById('back-to-top').style.display = 'block';
+    document.getElementById("back-to-top").style.display = "block";
   } else {
     button.style.opacity = "0";
   }
@@ -92,3 +93,4 @@ window.addEventListener("scroll", function () {
 button.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
