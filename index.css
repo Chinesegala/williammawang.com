@@ -30,7 +30,7 @@ body {
 }
 header {
   width: 92vw;
-  height: 3%;
+  height: 5%;
   padding: 6vh 4vw;
   position: fixed;
   font-weight: bold;
@@ -185,24 +185,24 @@ header table {
   width: 15%;
 }
 #bio .bio-img {
-  padding: 50px 0px;
+  padding: 80px 0px;
   float: right;
   width: 30%;
   height: auto;
-  margin-left: 20px;
+  margin-left: 30px;
   border-radius: 50px;
 }
 
 /* Career */
 #work {
-  width: 92vw;
-  padding: 1vh 4vw;
-  font-weight: bold;
+  width: 80vw;
+  padding: 1vh 8vw;
+  font-weight: normal;
 }
 #work h1 {
   padding: 5px 0px;
   border-bottom: 4px solid rgb(128, 159, 255);
-  width: 6%;
+  width: 15%;
 }
 #photos {
   width: 100%;
@@ -224,13 +224,13 @@ header table {
 
 /* Contact header */
 #contact {
-  width: 92vw;
-  padding: 6vh 4vw;
+  width: 80vw;
+  padding: 6vh 1vw;
 }
 #contact h1 {
   padding: 5px 0px;
   border-bottom: 4px solid rgb(128, 159, 255);
-  width: 10%;
+  width: 15%;
 }
 /* Contact content */
 #contact table {
@@ -246,7 +246,7 @@ header table {
   font-weight: bold;
 }
 #inner_table tr td {
-  padding: 10px 20px !important;
+  padding: 10px 10px !important;
 }
 /* Contact form */
 #contact form {
@@ -439,4 +439,152 @@ button:focus {
   #navigation a {
     color: #ffffff;
   }
+}
+
+
+:root {
+
+  /**
+   * colors
+   */
+
+  /* solid */
+
+  --light-blue: rgb(128, 159, 255);
+  --dark-gray: rgb(38, 37, 37);
+  --white: rgb(255, 255, 255);
+
+  /**
+   * typography
+   */
+
+  /* font-family */
+  --ff-dm: 'DM Serif Display', sans-serif;
+
+  /* font-size */
+  --fs-1: 24px;
+  --fs-2: 18px;
+  --fs-3: 17px;
+  --fs-4: 16px;
+  --fs-5: 15px;
+  --fs-6: 14px;
+  --fs-7: 13px;
+  --fs-8: 11px;
+
+  /* font-weight */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+
+  /**
+   * shadow
+   */
+  
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+
+  /**
+   * transition
+   */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease-in-out;
+
+}
+
+/*-----------------------------------*\
+  #RESUME
+\*-----------------------------------*/
+
+.article-title { margin-bottom: 30px; }
+
+.icon-box {
+  position: relative;
+  background: rgb(50, 50, 50);
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  font-size: 16px;
+  color: rgb(128, 159, 255);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+/**
+ * education and experience 
+ */
+
+.timeline { margin-bottom: 30px;}
+
+.timeline .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.timeline-list {
+  font-size: 16px;
+  margin-left: 45px;
+  font-style: normal;
+  list-style: none
+}
+
+.timeline-item { position: relative; }
+
+.timeline-item:not(:last-child) { margin-bottom: 20px; }
+
+.timeline-item-title {
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.timeline-list span {
+  color: rgb(128, 159, 255);
+  line-height: 1.6;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: rgb(255, 255, 255);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: rgb(128, 159, 255);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgb(50, 50, 50);
+}
+
+.timeline-text {
+  line-height: 1.6;
+  font-style: normal;
 }

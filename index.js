@@ -9,7 +9,7 @@ window.onscroll = function () {
       $("#header").css("background", "#302f2f");
       $("#header").css("color", "#ffffff");
       $("#header").css("box-shadow", "0px 0px 20px rgba(0,0,0,0.09)");
-      $("#header").css("padding", "4vh 4vw");
+      $("#header").css("padding", "3vh 4vw");
       $("#navigation a").hover(
         function () {
           $(this).css("border-bottom", "2px solid rgb(128, 159, 255)");
