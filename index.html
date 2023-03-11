@@ -18,8 +18,10 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <!-- Other -->
-    <link rel="stylesheet" href="index.css">
+    <script src="/script/js/index.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/formcarry-form.css" />
 </head>
 
 <body>
@@ -345,12 +347,20 @@
                         </div>
                     </td>
                     <td>
-                        <form>
-                            <input type="text" placeholder="Name" required>
-                            <input type="email" id="Email" name="Email" placeholder="Email" required><br>
-                            <textarea placeholder="Your message" required rows="5"></textarea><br>
-                            <button class="main_btn">Send</button>
+                        <div class="formcarry-container">
+                        <form action="form-process.php" method="POST" class="formcarry-form">
+                          <label for="name">Your Name</label>
+                          <input type="text" id="name" name="fullName" placeholder="Name" required />
+                  
+                          <label for="email">Your Email Address</label>
+                          <input type="email" id="email" name="email" placeholder="Email" required />
+                  
+                          <label for="message">Your Message</label>
+                          <textarea name="message" id="message" placeholder="Message" cols="10" rows="10"></textarea>
+                  
+                          <button type="submit">Send</button>
                         </form>
+                      </div>
                     </td>
                 </tr>
             </table>
