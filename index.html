@@ -4,9 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- SEO -->
     <title>William M. Wang</title>
+    <meta name="discription" content="Hello, My name is William Wang, currently a university student studying psychology.">
     <meta name="author" content="William Wang">
+    <!-- OpenGraph -->
+    <meta property="og:title" content="William M. Wang"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.williammawang.com"/>
+    <meta property="og:image" content="https://williammawang.com/images/main-pic.jpg"/>
+    <meta property="og:type" content="Hello, I am a university student studying psychology. This is my website."/>
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/favicon.ico">
     <!-- Animation -->
@@ -16,19 +23,14 @@
     <link href="/assets/fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
     <link href="/assets/fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Styles -->
-    <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/contact-form.css" />
+    <link rel="stylesheet" href="/stylesheet/index.css">
+    <link rel="stylesheet" href="/stylesheet/contact-form.css">
 </head>
 
 <body>
-    <div id="magnify">
-        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
-        <div id="img_here"></div>
-    </div>
-
     <!-- Header -->
     <header id="header" class="animate__animated animate__slideInDown" style="animation-delay:0.1s;">
         <table>
@@ -37,22 +39,22 @@
                 <td id="navigation">
                     <a href="#bio">about.</a>
                     <a href="#work">work.</a>
-                    <a href="">learn.</a>
+                    <a href="">stuff.</a>
                     <a href="#contact">contact.</a>
                 </td>
             </tr>
         </table>
     </header>
 
-    <!-- Main page -->
-    <table id="top_part">
+    <!-- Entry page -->
+    <table id="entry">
         <tr>
             <td id="hello" class="animate__animated animate__slideInLeft" style="animation-delay:0.1s;">
                 <h1><span class="auto-type"></span><br>
                     My name is William Wang.</h1>
                 <h2>It's nice to meet you.</h2>
 
-                <a href="/resume.pdf" class="main_btn" style="text-decoration:none">Resumé</a>
+                <a href="/assets/resume.pdf" class="main_btn" style="text-decoration:none">Resumé</a>
 
                 <table>
                     <tr>
@@ -88,41 +90,9 @@
         </tr>
     </table>
 
-    <!-- Main page typed.js -->
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["Hi,", //English
-                    "Hello,", // English
-                    "你好,", // Mandarin
-                    "Bonjour,", //French
-                    "Hola,", // Spanish
-                    "こんにちは,", // Japanese
-                    "안녕하세요,", // Korean
-                    "Hallå,", // Swedish
-                    "Hej,", // Danish
-                    "Xin Chào,", // Vietnamese
-                    "Hei,", // Norwegian, Finnish
-                    "Cześć,", // Polish
-                    "Guten Tag,", // German
-                    "Hallo,", // Dutch
-                    "Χαίρετε,", // Greek
-                    "Salut,", // Romanian
-                    "Ahoj,", // Czech
-                    "Привет,", // Russian
-                    "Привіт,", // Ukranian
-                    "Dobar Dan,", // Croatian
-                    "Helo,", // Malay
-                    "Salve," // Italian
-                ],
-            typeSpeed: 100,
-            backSpeed: 30,
-            loop: true
-        })
-    </script>
-
     <!-- About section -->
     <div id="bio">
-        <img src="/images/my-avatar.png" alt="Your Image" class="bio-img">
+        <img src="/images/my-avatar.png" alt="Me, smiling :D" class="bio-img">
         <h1>About</h1>
         <p>
         Hello! My name is William and I enjoy learning about whatever I can.
@@ -133,15 +103,12 @@
         </p>
         <p>
         I am currently a student at the
-
-        <a href="https://wisc.edu/" target="_blank" rel="noreferrer">
-        University of Wisconsin - Madison
-        </a>
-        
+            <a href="https://wisc.edu/" target="_blank" rel="noreferrer">
+            University of Wisconsin - Madison
+            </a>
          majoring in psychology. My main career goal is to become a liscenced psychologist in the United States and potentially transition into
           Canada. I plan to attend graduate school in 2026.
         </p>
-
         <h3>
         Below are some things I’ve been learning about in Q2 2023:
         </h3>
@@ -157,212 +124,97 @@
     <!-- Work section -->
     <div id="work">
         <h1>Career</h1>
-
         <p>
             As an 18-year-old, I probably don't have as much experience as I should have. Nonetheless, I am trying to get through life
              The best I can. Here is an aggregated list of my experiences.
         </p>
-
       <article class="resume" data-page="resume">
         
         <section class="timeline">
-
             <div class="title-wrapper">
               <div class="icon-box">
                   <i class="fa-solid fa-briefcase"></i>
               </div>
-  
               <h3 class="h3">Experience</h3>
             </div>
-  
-            <ol class="timeline-list">
-  
-              <li class="timeline-item">
-  
-                <h4 class="h4 timeline-item-title">Board Member</h4>
 
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Board Member</h4>
                 <p>
                     Utry Service, Toronto, ON, Canada | <span>Dec 2022 — Present</span>
                 </p>
-  
                 <p class="timeline-text">
                   - Managing company communications, partnerships and outreach<br>
                   - Created and designed company website
                 </p>
-  
               </li>
   
               <li class="timeline-item">
-  
                 <h4 class="h4 timeline-item-title">Team Member</h4>
-  
                 <p>
                     University of Wisconsin - Madison, Madison, WI, USA | <span>Aug 2022 — Oct 2022</span>
                 </p>
-
-  
                 <p class="timeline-text">
                     - Provided quality services for UW-Madison students<br>
                     - Worked with fellow team members to provide service to customers
                 </p>
-  
               </li>
   
               <li class="timeline-item">
-  
                 <h4 class="h4 timeline-item-title">Quality Assurance</h4>
-  
                 <p>
                     Wysdom AI, Richmond Hill, ON, Canada | <span>Oct 2021 — Jan 2022</span>
                 </p>
-  
                 <p class="timeline-text">
                     - Created and achieved product quality objectives and met product specifications<br>
                     - Analyzed and tested different product interfaces to identify, trace and help resolve bugs
                 </p>
-  
               </li>
-  
             </ol>
-  
           </section>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
                 <i class="fa-solid fa-user-graduate"></i>
             </div>
-
             <h3 class="h3">Education</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">BSc Psychology</h4>
-
               <p>
                 University of Wisconsin - Madison | <span>2022 - 2026</span>
               </p>
-
               <p class="timeline-text">
                 - Psychology Club member<br>
                 - UW Fencing Club member
               </p>
-
             </li>
 
             <li class="timeline-item">
-
               <h4 class="h4 timeline-item-title">High School Diploma</h4>
-
               <p>
                 Sir William Mulock SS | <span>2018 — 2022</span>
               </p>
-
               <p class="timeline-text">
                 - Specialist High Skills Major (SHSM) Certification<br>
                 - Computer Science Route (95% CS Average)<br>
                 - Member of Athletic Council 2019 - 2022<br>
-                - Awarded Magna Cum Laude 2020, 2021, 2022<br>
+                - Magna Cum Laude 2020, 2021, 2022<br>
               </p>
-
             </li>
-
           </ol>
-
         </section>
 
-        <p>To view my entire resumé, click
+        <p>&emsp;To view my entire resumé, click
             <a href="/resume.pdf">
             here
             </a>
             .
         </p>
-<!--
-        <div id="photos">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547922657-b370d1687eb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1549375463-8cbc18ca3f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1549366021-9f761d450615?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=650&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1549309019-a1d77aeae74f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547149666-769b42053e67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547950515-e652d0f50b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
-            <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1545342084-d03fe58ea023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80">
-        </div>
-    </div>
--->
-    <!-- Contact section -->
-    <div id="contact">
-        <h1>Contact</h1>
-            <table>
-                <tr>
-                    <td>
-                        <div id="inner_div">
-                            <table id="inner_table">
-                                <tr>
-                                    <td><i class="fa-solid fa-message"></i>
-                                        <div id="address">
-                                        If you have a question or just want to say hello, contact me!<br>
-                                        I probably won't be able to get to you immediately<br>
-                                        (I am a uni student unfortunately),<br>
-                                        but I will try my best.
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-at"></i> &nbsp; Wmwang@wisc.edu</td>
-                                </tr>
-                                <tr>
-                                    <td><i class="fas fa-map-marker-alt"></i>
-                                    <div id="address">
-                                        35 North Park St,<br>
-                                        Madison, Wisconsin<br>
-                                        United States
-                                    </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="mailto:wmwang@wisc.edu" class="social">
-                                            <i class="fa-solid fa-envelope"></i></a>
-
-                                        <a href="https://linkedin.com/in/williammawang" class="social">
-                                            <i class="fa-brands fa-linkedin"></i></a>
-
-                                        <a href="https://instagram.com/chinese.gala" class="social">
-                                            <i class="fab fa-instagram"></i></a>
-
-                                        <a href="https://github.com/Chinesegala" class="social">
-                                            <i class="fab fa-github"></i></a>
-
-                                        <a href="https://open.spotify.com/user/21zdwau7mfrwuuywowr5uczci" class="social">
-                                            <i class="fa-brands fa-spotify"></i></a>
-                                    </td>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="formcarry-container">
-                        <form action="form-process.php" method="POST" class="formcarry-form">
-                          <label for="name">Your Name</label>
-                          <input type="text" id="name" name="fullName" placeholder="Name" required />
-                  
-                          <label for="email">Your Email Address</label>
-                          <input type="email" id="email" name="email" placeholder="Email" required />
-                  
-                          <label for="message">Your Message</label>
-                          <textarea name="message" id="message" placeholder="Message" cols="10" rows="10"></textarea>
-                  
-                          <button type="submit">Send</button>
-                        </form>
-                      </div>
-                    </td>
-                </tr>
-            </table>
     </div>
 
     <!-- Back-to-top button -->
@@ -372,11 +224,25 @@
 
     <!-- Footer -->
     <div id="footer">
+    <div>
+        <a href="mailto:wmwang@wisc.edu" class="social">
+            <i class="fa-solid fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/williammawang" class="social">
+            <i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://instagram.com/chinese.gala" class="social">
+            <i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Chinesegala" class="social">
+            <i class="fab fa-github"></i></a>
+        <a href="https://open.spotify.com/user/21zdwau7mfrwuuywowr5uczci" class="social">
+            <i class="fa-brands fa-spotify"></i></a>
+    </div>
+    <div>&nbsp;</div>
         © 2023 williammawang.<br>
         <a href="https://williammawang.com">Website link</a>
     </div>
     
-    <!-- Script import -->
-    <script src="index.js" type="text/javascript"></script>
+    <!-- Script import: https://levelup.gitconnected.com/all-about-script-87fea475b976 -->
+    <script src="/src/js/index.js"></script>
 </body>
+
 </html>

@@ -9,7 +9,7 @@ window.onscroll = function () {
       $("#header").css("background", "#302f2f");
       $("#header").css("color", "#ffffff");
       $("#header").css("box-shadow", "0px 0px 20px rgba(0,0,0,0.09)");
-      $("#header").css("padding", "3vh 4vw");
+      $("#header").css("padding", "2vh 4vw");
       $("#navigation a").hover(
         function () {
           $(this).css("border-bottom", "2px solid rgb(128, 159, 255)");
@@ -94,3 +94,31 @@ button.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+var typed = new Typed(".auto-type", {
+  strings: ["Hi,", //English
+          "Hello,", // English
+          "你好,", // Mandarin
+          "Bonjour,", //French
+          "Hola,", // Spanish
+          "こんにちは,", // Japanese
+          "안녕하세요,", // Korean
+          "Hallå,", // Swedish
+          "Hej,", // Danish
+          "Xin Chào,", // Vietnamese
+          "Hei,", // Norwegian, Finnish
+          "Cześć,", // Polish
+          "Guten Tag,", // German
+          "Hallo,", // Dutch
+          "Χαίρετε,", // Greek
+          "Salut,", // Romanian
+          "Ahoj,", // Czech
+          "Привет,", // Russian
+          "Привіт,", // Ukranian
+          "Dobar Dan,", // Croatian
+          "Helo,", // Malay
+          "Salve," // Italian
+      ],
+  typeSpeed: 100,
+  backSpeed: 30,
+  loop: true
+})

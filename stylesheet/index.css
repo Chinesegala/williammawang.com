@@ -103,11 +103,11 @@ Top right nav
 #navigation a:hover {
   border-bottom: 2px solid #fff;
 }
-#top_part {
+#entry {
   width: 100%;
   border: 2vh solid #fff;
 }
-#top_part tr td {
+#entry tr td {
   width: 50%;
 }
 #hello {
@@ -494,10 +494,10 @@ Mobile version
   #rightImage {
     display: none;
   }
-  #top_part {
+  #entry {
     border: 0px;
   }
-  #top_part tr td {
+  #entry tr td {
     width: 100%;
     text-align: center;
   }

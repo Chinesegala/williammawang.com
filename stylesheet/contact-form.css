@@ -5,8 +5,8 @@
 	font-family: "Inter", sans-serif;
 
   /* colors */
-  --color-blue: #2552d0;
-  --color-light-blue: #3266e3;
+  --color-blue: rgb(128, 159, 255);
+  --color-light-blue: rgba(128, 159, 255, 0.8);
   --color-gray: #e5e7eb;
   --color-dark-gray: #9da3ae;
   --color-pink: #edadd2;
@@ -56,7 +56,7 @@
   margin-top: 12px;
   width: 30%;
   padding: 12px 20px;
-  border-radius: 8px;
+  border-radius: 80px;
   border-color: transparent;
   background-color: var(--color-blue);
   color: #fff;
