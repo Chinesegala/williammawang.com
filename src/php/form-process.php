@@ -1,74 +1,42 @@
 <?php
-if (isset($_POST['email'])) {
+if(isset($_POST['submit'])){
+    $to = "youremail@example.com"; // this is your Email address
+    $from = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // this is the sender's Email address
+    $first_name = filter_var($_POST['first_name'], FILTER_SANITIZE_STRING);
+    $last_name = filter_var($_POST['last_name'], FILTER_SANITIZE_STRING);
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = filter_var($first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'], FILTER_SANITIZE_STRING);
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
 
-    $email_to = "willwang.org@outlook.com";
-    $email_subject = "Wmw.com submission";
-
-    function problem($error)
-    {
-        echo "Oh looks like there is some problem with your form data: <br><br>";
-        echo $error . "<br><br>";
-        echo "Please fix those to proceed.<br><br>";
-        die();
+    // Check if all required fields are filled out
+    if(empty($first_name) || empty($last_name) || empty($from) || empty($message)) {
+        echo "Please fill out all required fields.";
+        exit;
     }
 
-    // validation expected data exists
-    if (
-        !isset($_POST['fullName']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['message'])
-    ) {
-        problem('Oh looks like there is some problem with your form data.');
+    // Check if email address is valid
+    if(!filter_var($from, FILTER_VALIDATE_EMAIL)) {
+        echo "Please enter a valid email address.";
+        exit;
     }
 
-    $name = $_POST['fullName']; // required
-    $email = $_POST['email']; // required
-    $message = $_POST['message']; // required
-
-    $error_message = "";
-    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-
-    if (!preg_match($email_exp, $email)) {
-        $error_message .= 'Email address does not seem valid.<br>';
+    // Check if first name is at least 2 characters long
+    if(strlen($first_name) < 2) {
+        echo "First name must be at least 2 characters long.";
+        exit;
     }
 
-    $string_exp = "/^[A-Za-z .'-]+$/";
-
-    if (!preg_match($string_exp, $name)) {
-        $error_message .= 'Name does not seem valid.<br>';
+    // Check if first and last name contain only letters and white spaces
+    if(!preg_match("/^[a-zA-Z ]*$/",$first_name) || !preg_match("/^[a-zA-Z ]*$/",$last_name)) {
+        echo "Only letters and white spaces are allowed in the first and last name fields.";
+        exit;
     }
 
-    if (strlen($message) < 2) {
-        $error_message .= 'Message should not be less than 2 characters<br>';
-    }
-
-    if (strlen($error_message) > 0) {
-        problem($error_message);
-    }
-
-    $email_message = "Form details following:\n\n";
-
-    function clean_string($string)
-    {
-        $bad = array("content-type", "bcc:", "to:", "cc:", "href");
-        return str_replace($bad, "", $string);
-    }
-
-    $email_message .= "Name: " . clean_string($name) . "\n";
-    $email_message .= "Email: " . clean_string($email) . "\n";
-    $email_message .= "Message: " . clean_string($message) . "\n";
-
-    // create email headers
-    $headers = 'From: ' . $email . "\r\n" .
-        'Reply-To: ' . $email . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);
-?>
-
-    <!-- Replace this as your success message -->
-
-    Thanks for contacting us, we will get back to you as soon as possible.
-
-<?php
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
 }
 ?>

@@ -1,3 +1,4 @@
+// Header scrolling change //
 var width = $(window).width();
 window.onscroll = function () {
   // Sets nav bar to fixed when page width exceeds #
@@ -6,35 +7,58 @@ window.onscroll = function () {
       document.body.scrollTop > 80 ||
       document.documentElement.scrollTop > 80
     ) {
-      $("#header").css("background", "#302f2f");
-      $("#header").css("color", "#ffffff");
-      $("#header").css("box-shadow", "0px 0px 20px rgba(0,0,0,0.09)");
-      $("#header").css("padding", "2vh 4vw");
-      $("#navigation a").hover(
-        function () {
-          $(this).css("border-bottom", "2px solid rgb(128, 159, 255)");
-        },
-        function () {
-          $(this).css("border-bottom", "2px solid transparent");
-        }
-      );
-      // Otherwise nav bar stays static
+      $("#header").addClass("fixed-header");
     } else {
-      $("#header").css("background", "transparent");
-      $("#header").css("color", "#fff");
-      $("#header").css("box-shadow", "0px 0px 0px rgba(0,0,0,0)");
-      $("#header").css("padding", "6vh 4vw");
-      $("#navigation a").hover(
-        function () {
-          $(this).css("border-bottom", "2px solid #fff");
-        },
-        function () {
-          $(this).css("border-bottom", "2px solid transparent");
-        }
-      );
+      $("#header").removeClass("fixed-header");
     }
   }
 };
+
+// add invisible class to #bio element by default
+$('#bio').addClass('invisible');
+
+let bioAnimationTriggered = false;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300 && !bioAnimationTriggered) {
+    // remove invisible class from #bio element
+    document.querySelector('#bio').classList.remove('invisible');
+    // add animate__jackInTheBox class to #bio element
+    document.querySelector('#bio').classList.add('animate__fadeInUp');
+    // set animationTriggered to true
+    bioAnimationTriggered = true;
+  } else if (window.scrollY <= 300 && bioAnimationTriggered) {
+    // remove animate__jackInTheBox class from #bio element
+    document.querySelector('#bio').classList.remove('animate__fadeInUp');
+    // add another animation class to #bio element
+    document.querySelector('#bio').classList.add('animate__backOutDown');
+    // set animationTriggered to false
+    bioAnimationTriggered = false;
+  }
+});
+
+// add invisible class to #bio element by default
+$('#hobbies').addClass('invisible');
+
+let hobbyAnimationTriggered = false;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 900 && !hobbyAnimationTriggered) {
+    // remove invisible class from #bio element
+    document.querySelector('#hobbies').classList.remove('invisible');
+    // add animate__jackInTheBox class to #bio element
+    document.querySelector('#hobbies').classList.add('animate__fadeInUp');
+    // set animationTriggered to true
+    hobbyAnimationTriggered = true;
+  } else if (window.scrollY <= 900 && hobbyAnimationTriggered) {
+    // remove animate__jackInTheBox class from #bio element
+    document.querySelector('#hobbies').classList.remove('animate__fadeInUp');
+    // add another animation class to #bio element
+    document.querySelector('#hobbies').classList.add('animate__backOutDown');
+    // set animationTriggered to false
+    hobbyAnimationTriggered = false;
+  }
+});
 
 function magnify(imglink) {
   $("#img_here").css("background", `url('${imglink}') center center`);
@@ -122,3 +146,27 @@ var typed = new Typed(".auto-type", {
   backSpeed: 30,
   loop: true
 })
+
+const hobbiesList = document.querySelector("#hobbies-list");
+const hobbyBubbles = document.querySelectorAll(".hobby-bubble");
+
+let lastScrollTop = 0;
+window.addEventListener("scroll", () => {
+  let st = window.pageYOffset || document.documentElement.scrollTop;
+  if (st > lastScrollTop) {
+    // Scrolling down
+    hobbyBubbles.forEach((bubble, index) => {
+      setTimeout(() => {
+        bubble.classList.add("visible");
+      }, index * 100);
+    });
+  } else {
+    // Scrolling up
+    hobbyBubbles.forEach((bubble, index) => {
+      setTimeout(() => {
+        bubble.classList.remove("visible");
+      }, index * 100);
+    });
+  }
+  lastScrollTop = st <= 0 ? 0 : st;
+});
