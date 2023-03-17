@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['submit'])){
-    $to = "youremail@example.com"; // this is your Email address
+    $to = "wmwwebmail@gmail.com"; // this is your Email address
     $from = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // this is the sender's Email address
     $first_name = filter_var($_POST['first_name'], FILTER_SANITIZE_STRING);
     $last_name = filter_var($_POST['last_name'], FILTER_SANITIZE_STRING);

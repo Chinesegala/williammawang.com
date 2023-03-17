@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=DM Serif Display");
-
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Syne ");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap");
 /*
 Dark theme
 */
@@ -13,16 +15,25 @@ Dark theme
   }
 }
 
+@font-face {
+  font-family: 'Benz';
+  src: local("/assets/fonts/benz.woff"),
+       url('/assets/fonts/benz.woff') format('woff');
+}
+
 /*
 Main
 */
 body {
-  font-family: "DM Serif Display", sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 0px;
   margin: 0px;
   max-width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+p {
+  font-size: 17px;
 }
 @keyframes rotate {
   0% {
@@ -37,6 +48,7 @@ body {
 Header
 */
 header {
+  font-family: "DM Serif Display", sans-serif;
   width: 92vw;
   height: 5%;
   padding: 6vh 4vw;
@@ -51,9 +63,9 @@ header table {
   width: 100%;
 }
 .fixed-header {
-  background: #302f2f;
+  background: rgba(48, 47, 47,0.98);
   color: #ffffff;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.09);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.07);
   padding: 2vh 4vw;
 }
 
@@ -118,14 +130,22 @@ Top right nav
   border-bottom: 2px solid #fff;
 }
 
+h1#body-header {
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Benz";
+  font-size: 90px;
+}
+
 #entry {
   width: 100%;
-  border: 2vh solid #fff;
+  border: 2vh solid #4f4f4f;
 }
 #entry tr td {
   width: 50%;
 }
 #hello {
+  font-family: "DM Serif Display", sans-serif;
   width: 84% !important;
   height: 95vh;
   display: flex;
@@ -196,10 +216,20 @@ Profile image
 */
 #rightImage {
   width: 100%;
-  height: 95vh;
+  height: 95.5vh;
   background-image: linear-gradient(to top right, rgba(0,0,0,0), rgba(0,0,0,.2)), url(/images/main-pic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 2%;
+}
+
+#careerImage {
+  width: 100%;
+  height: 95.5vh;
+  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,.6)), url(/images/UWConvocation2022.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .invisible {
@@ -210,27 +240,64 @@ Profile image
 About section
 */
 #bio {
+  width: 100vw;
+  padding: 40px 0px 100px 120px;
+  font-weight: normal;
+}
+#bio .bio-img {
+  width: 30%;
+  height: auto;
+  margin-left: 30px;
+  margin-right: 200px;
+  border-radius: 50px;
+  float: right;
+}
+
+/*
+Sections
+*/
+#section-list {
   width: 82vw;
   padding: 6vh 8vw;
   font-weight: normal;
 }
-#bio h1 {
+#section-list h1 {
   padding: 5px 0px;
-  border-bottom: 4px solid rgb(128, 159, 255);
-  width: 15%;
+  text-align: center;
+  font-weight: bolder;
 }
-#bio .bio-img {
-  padding: 80px 0px;
-  float: right;
-  width: 30%;
-  height: auto;
-  margin-left: 30px;
-  border-radius: 50px;
+
+.sectbubble {
+  margin-inline: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  background-color: #4f4f4f;
+  padding:50px;
+}
+.sectbubble h2{
+  font-family: "Benz";
+}
+.section {
+  width: calc(50% - 10px);
+  height: calc(50% - 10px);
+  margin:5px;
+  border-radius:15px;
 }
 
 /*
-Career section
+Hobby section
 */
+.hobbyBubble {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  background-color: #434b57;
+  padding:50px;
+}
+.hobbyBubble h2{
+  font-family: "Benz";
+}
 #hobbies {
   width: 80vw;
   padding: 1vh 8vw;
@@ -257,6 +324,20 @@ Career section
 #photos img:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+/*
+Hobby section
+*/
+#career {
+  width: 100vw;
+  padding: 1vh 8vw;
+  font-weight: normal;
+}
+#career h1 {
+  padding: 5px 0px;
+  border-bottom: 4px solid rgb(128, 159, 255);
+  width: 15%;
 }
 
 /*
@@ -350,6 +431,12 @@ Education and experience
 .timeline-text {
   line-height: 1.6;
   font-style: normal;
+}
+
+.hobbyContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 8vw;
 }
 
 /*
@@ -452,6 +539,7 @@ Footer
 Other
 */
 ::placeholder {
+  font-family: "Syne", sans-serif;
   color: #ffffff;
 }
 button:focus {
@@ -585,35 +673,12 @@ Mobile version
   #navigation a {
     color: #ffffff;
   }
-}
+  .hobbyContainer {
+    flex-direction: column;
+  }
 
-
-#hobbies-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.hobby-bubble {
-  display: inline-flex;
-  align-items: center;
-  background-color: lightgray;
-  color: #809fff;
-  padding: 10px;
-  border-radius: 20px;
-  margin: 10px;
-  position: absolute;
-}
-
-.hobby-bubble.left {
-  left: calc(50% - 150px);
-}
-
-.hobby-bubble.right {
-  right: calc(50% - 150px);
-}
-
-.hobby-bubble i {
-  margin-right: 10px;
+  .timeline {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
