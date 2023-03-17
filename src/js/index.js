@@ -1,18 +1,32 @@
-// Header scrolling change //
-var width = $(window).width();
-window.onscroll = function () {
-  // Sets nav bar to fixed when page width exceeds #
-  if (width >= 1000) {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
-      $("#header").addClass("fixed-header");
-    } else {
-      $("#header").removeClass("fixed-header");
-    }
-  }
-};
+var typed = new Typed(".auto-type", {
+  strings: ["",
+          "Hi,", //English
+          "Hello,", // English
+          "你好,", // Mandarin
+          "Bonjour,", //French
+          "Hola,", // Spanish
+          "こんにちは,", // Japanese
+          "안녕하세요,", // Korean
+          "Hallå,", // Swedish
+          "Hej,", // Danish
+          "Xin Chào,", // Vietnamese
+          "Hei,", // Norwegian, Finnish
+          "Cześć,", // Polish
+          "Guten Tag,", // German
+          "Hallo,", // Dutch
+          "Χαίρετε,", // Greek
+          "Salut,", // Romanian
+          "Ahoj,", // Czech
+          "Привет,", // Russian
+          "Привіт,", // Ukranian
+          "Dobar Dan,", // Croatian
+          "Helo,", // Malay
+          "Salve," // Italian
+      ],
+  typeSpeed: 100,
+  backSpeed: 30,
+  loop: true
+})
 
 // add invisible class to element by default
 $('#bio').addClass('invisible');
@@ -135,65 +149,3 @@ setTimeout(function () {
     $("#loading").css("display", "none");
   }, 800);
 }, 1650);
-
-$(document).ready(function () {
-  $("a").on("click", function (event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $("body,html").animate(
-        {
-          scrollTop: $(hash).offset().top,
-        },
-        1800,
-        function () {
-          window.location.hash = hash;
-        }
-      );
-    }
-  });
-});
-
-// Back to top function //
-var button = document.getElementById("back-to-top");
-window.addEventListener("scroll", function () {
-  if (window.pageYOffset > 700) {
-    button.style.opacity = "1";
-    document.getElementById("back-to-top").style.display = "block";
-  } else {
-    button.style.opacity = "0";
-  }
-});
-button.addEventListener("click", function () {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-var typed = new Typed(".auto-type", {
-  strings: ["",
-          "Hi,", //English
-          "Hello,", // English
-          "你好,", // Mandarin
-          "Bonjour,", //French
-          "Hola,", // Spanish
-          "こんにちは,", // Japanese
-          "안녕하세요,", // Korean
-          "Hallå,", // Swedish
-          "Hej,", // Danish
-          "Xin Chào,", // Vietnamese
-          "Hei,", // Norwegian, Finnish
-          "Cześć,", // Polish
-          "Guten Tag,", // German
-          "Hallo,", // Dutch
-          "Χαίρετε,", // Greek
-          "Salut,", // Romanian
-          "Ahoj,", // Czech
-          "Привет,", // Russian
-          "Привіт,", // Ukranian
-          "Dobar Dan,", // Croatian
-          "Helo,", // Malay
-          "Salve," // Italian
-      ],
-  typeSpeed: 100,
-  backSpeed: 30,
-  loop: true
-})
