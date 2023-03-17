@@ -57,14 +57,14 @@ $('.sectbubble').addClass('invisible');
 let sectAnimationTriggered = false;
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 1200 && !sectAnimationTriggered) {
+  if (window.scrollY > 1100 && !sectAnimationTriggered) {
     // remove invisible class from #bio element
     document.querySelector('.sectbubble').classList.remove('invisible');
     // add animate__jackInTheBox class to #bio element
     document.querySelector('.sectbubble').classList.add('animate__fadeIn');
     // set animationTriggered to true
     sectAnimationTriggered = true;
-  } else if (window.scrollY <= 1200 && sectAnimationTriggered) {
+  } else if (window.scrollY <= 1100 && sectAnimationTriggered) {
     // remove animate__jackInTheBox class from #bio element
     document.querySelector('.sectbubble').classList.remove('animate__fadeIn');
     // add another animation class to #bio element
@@ -75,35 +75,12 @@ window.addEventListener('scroll', () => {
 });
 
 // add invisible class to element by default
-$('#hobbies').addClass('invisible');
-
-let hobbyAnimationTriggered = false;
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 1800 && !hobbyAnimationTriggered) {
-    // remove invisible class from #bio element
-    document.querySelector('#hobbies').classList.remove('invisible');
-    // add animate__jackInTheBox class to #bio element
-    document.querySelector('#hobbies').classList.add('animate__fadeIn');
-    // set animationTriggered to true
-    hobbyAnimationTriggered = true;
-  } else if (window.scrollY <= 1800 && hobbyAnimationTriggered) {
-    // remove animate__jackInTheBox class from #bio element
-    document.querySelector('#hobbies').classList.remove('animate__fadeIn');
-    // add another animation class to #bio element
-    document.querySelector('#hobbies').classList.add('animate__backOutDown');
-    // set animationTriggered to false
-    hobbyAnimationTriggered = false;
-  }
-});
-
-// add invisible class to element by default
 $('.hobbyContainer').addClass('invisible');
 
 let timelineAnimationTriggered = false;
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 1800 && !timelineAnimationTriggered) {
+  if (window.scrollY > 1900 && !timelineAnimationTriggered) {
     // remove invisible class from all .hobbyContainer elements
     document.querySelectorAll('.hobbyContainer').forEach((element) => {
       element.classList.remove('invisible');
@@ -112,7 +89,7 @@ window.addEventListener('scroll', () => {
     });
     // set animationTriggered to true
     timelineAnimationTriggered = true;
-  } else if (window.scrollY <= 1800 && timelineAnimationTriggered) {
+  } else if (window.scrollY <= 1900 && timelineAnimationTriggered) {
     // remove animate__jackInTheBox class from all .hobbyContainer elements
     document.querySelectorAll('.hobbyContainer').forEach((element) => {
       element.classList.remove('animate__fadeIn');
@@ -123,29 +100,3 @@ window.addEventListener('scroll', () => {
     timelineAnimationTriggered = false;
   }
 });
-
-function magnify(imglink) {
-  $("#img_here").css("background", `url('${imglink}') center center`);
-  $("#magnify").css("display", "flex");
-  $("#magnify").addClass("animate__animated animate__fadeIn");
-  setTimeout(function () {
-    $("#magnify").removeClass("animate__animated animate__fadeIn");
-  }, 800);
-}
-
-function closemagnify() {
-  $("#magnify").addClass("animate__animated animate__fadeOut");
-  setTimeout(function () {
-    $("#magnify").css("display", "none");
-    $("#magnify").removeClass("animate__animated animate__fadeOut");
-    $("#img_here").css("background", `url('') center center`);
-  }, 800);
-}
-
-setTimeout(function () {
-  $("#loading").addClass("animate__animated animate__fadeOut");
-  setTimeout(function () {
-    $("#loading").removeClass("animate__animated animate__fadeOut");
-    $("#loading").css("display", "none");
-  }, 800);
-}, 1650);

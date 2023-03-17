@@ -56,7 +56,7 @@ header {
   width: 92vw;
   height: 5%;
   padding: 6vh 4vw;
-  position: fixed;
+  position: fixed !important;
   font-weight: bold;
   background: transparent;
   color: #fff;
@@ -115,6 +115,13 @@ Top right nav
   color: rgb(128, 159, 255);
   cursor: pointer;
 }
+#img_here {
+  width: 90%;
+  height: 90%;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  margin: 0px auto;
+}
 #navigation a {
   color: inherit;
   text-decoration: none;
@@ -128,41 +135,13 @@ Top right nav
 }
 
 h1#body-header {
+    margin-block-start: 0px !important;
   margin-top: 100px;
+  padding-top: 300px;
   text-align: center;
   font-family: "Benz";
   font-size: 90px;
 }
-
-#entry {
-    width: 100%;
-    border: 2vh solid #4f4f4f;
-  }
-  #entry tr td {
-    width: 50%;
-  }
-  #hello {
-    font-family: "DM Serif Display", sans-serif;
-    width: 84% !important;
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    padding: 0px 8%;
-  }
-  #hello h1 {
-    font-size: 45px;
-    word-wrap: break-word;
-  }
-  #hello table {
-    width: 70%;
-    margin-top: 4vh;
-  }
-  #hello table tr td {
-    width: 20% !important;
-    text-align: left;
-  }
   
   /*
   Media icons
@@ -276,103 +255,29 @@ Footer
       background: rgb(128, 159, 255);
     }
 
-    
-/*
-Mobile version
-*/
-@media (max-width: 1000px) {
-  #photos {
-    columns: 1;
-    column-gap: 0%;
-  }
-  #photos img {
-    margin: 2% 0px;
-  }
-  #photos img:hover {
-    transform: scale(1);
-    cursor: pointer;
-  }
-  #rightImage {
-    display: none;
-  }
-  #entry {
-    border: 0px;
-  }
-  #entry tr td {
-    width: 100%;
+#free-stuff {
+    padding: 1% 30% 5% 30%;
+    font-weight: normal;
     text-align: center;
   }
-  #hello {
-    width: 92% !important;
-    height: 75vh;
-    padding-top: 20vh !important;
+  h1#body-header {
+    margin-top: 100px;
     text-align: center;
-    padding: 0px 4%;
+    font-family: "Benz";
+    font-size: 90px;
   }
-  #hello table {
-    width: 100%;
-    margin-top: 6vh;
-  }
-  #hello table tr td {
+  h2#body-header {
     text-align: center;
+    font-family: "Benz";
+    font-size: 30px;
   }
-  .main_btn {
-    padding: 6px 30px;
-    width: 25%;
-    margin: 4vh auto;
-    box-shadow: 0px 10px 20px rgba(128, 159, 255, 0.8);
-    background: transparent;
-    color: #fff;
-    text-align: center;
-  }
-  .main_btn:hover {
-    box-shadow: 0px 10px 40px rgba(128, 159, 255, 0.8);
-    cursor: pointer;
-  }
-  #contact table tr td {
-    width: 100%;
-    display: block;
-    padding-top: 50px;
-  }
-  #inner_table tr td {
-    padding: 10px 0px !important;
-  }
-  #contact form input {
-    width: 90%;
-  }
-  #contact form textarea {
-    width: 90%;
-  }
-  #hobbies h1 {
-    width: 100%;
-  }
-  #bio h1 {
-    width: 100%;
-  }
-  #contact h1 {
-    width: 100%;
-  }
-  header {
-    width: 96vw;
-    background: #262525;
-    padding: 4vh 2vw;
-    position: absolute;
-  }
-  #header table tr td {
-    width: 100%;
-    display: block;
-    text-align: center;
-    padding: 15px 0px;
-  }
-  #navigation a {
+  .fixed-header {
+    background: rgba(48, 47, 47,0.98);
     color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.07);
+    padding: 2vh 4vw;
   }
-  .hobbyContainer {
-    flex-direction: column;
+  
+  .fixed-header #navigation a:hover {
+    border-bottom: 2px solid rgb(128, 159, 255);
   }
-
-  .timeline {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}

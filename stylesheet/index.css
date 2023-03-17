@@ -1,3 +1,4 @@
+
 /*
 Profile image
 */
@@ -46,7 +47,7 @@ Sections
   display: flex;
   flex-wrap: wrap;
   border-radius: 25px;
-  background-color: #4f4f4f;
+  background-color: #493d61;
   padding:50px;
 }
 .sectbubble h2{
@@ -66,7 +67,7 @@ Hobby section
   display: flex;
   flex-wrap: wrap;
   border-radius: 25px;
-  background-color: #434b57;
+  background-color: #493d61;
   padding:50px;
 }
 .hobbyBubble h2{

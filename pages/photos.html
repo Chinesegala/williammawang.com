@@ -1,7 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>William M. Wang</title>
+    <meta name="description" content="Hello, My name is William Wang, currently a university student studying psychology.">
+    <meta name="author" content="William Wang">
+    <!-- OpenGraph -->
+    <meta property="og:title" content="William M. Wang"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.williammawang.com"/>
+    <meta property="og:image" content="https://williammawang.com/images/main-pic.jpg"/>
+    <meta property="og:description" content="Hello, I am a university student studying psychology. This is my website."/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/favicon.ico">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Icons -->
+    <link href="/assets/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="/assets/fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
+    <link href="/assets/fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="/stylesheet/universal.css">
+    <link rel="stylesheet" href="/stylesheet/photos.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header" class="animate__animated animate__slideInDown">
+        <table>
+            <tr>
+                <td id="logo"><a href="https://williammawang.com" style="text-decoration:none">williammawang.</a></td>
+                <td id="navigation">
+                    <a href="/index.html">home.</a>
+                    <a href="/pages/career.html">career.</a>
+                    <a href="/pages/stuff.html">stuff.</a>
+                    <a href="/pages/contact.html">contact.</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- About section -->
+    <div id="photo-sect" class="animate__animated animate__fadeIn">
+    <h1 id="body-header">Photos</h1>
+    </div>
+
 <div id="magnify">
     <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
     <div id="img_here"></div>
 </div>
+<div id="photo-sect" class="animate__animated animate__fadeIn" style="animation-delay:0.3s;">
+<div id="photo-contain">
     <div id="photos">
         <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1547922657-b370d1687eb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80">
         <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1549375463-8cbc18ca3f24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80">
@@ -12,3 +67,36 @@
         <img onclick="magnify($(this).attr('src'))" src="https://images.unsplash.com/photo-1545342084-d03fe58ea023?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80">
     </div>
 </div>
+</div>
+
+
+    <!-- Back-to-top button -->
+    <button id="back-to-top" title="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <div id="footer">
+    <div>
+        <a href="mailto:wmwwebemail@gmail.com" class="social">
+            <i class="fa-solid fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/williammawang" class="social">
+            <i class="fa-brands fa-linkedin"></i></a>
+        <a href="/pages/photos.html" class="social">
+            <i class="fa-solid fa-image"></i></a>
+        <a href="https://github.com/Chinesegala" class="social">
+            <i class="fab fa-github"></i></a>
+        <a href="https://open.spotify.com/user/21zdwau7mfrwuuywowr5uczci" class="social">
+            <i class="fa-brands fa-spotify"></i></a>
+    </div>
+    <div>&nbsp;</div>
+        © 2023 williammawang.<br>
+        <a href="https://williammawang.com">Website link</a>
+    </div>
+    
+    <!-- Script import: https://levelup.gitconnected.com/all-about-script-87fea475b976 -->
+    <script src="/src/js/photos.js"></script>
+    <script src="/src/js/universal.js"></script>
+</body>
+
+</html>
