@@ -6,28 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO -->
   <title>William M. Wang</title>
-   <meta name="description" content="Hello, My name is William Wang, currently a university student studying psychology.">
-   <meta name="author" content="William Wang">
-   <!-- OpenGraph -->
-   <meta property="og:title" content="William M. Wang">
-   <meta property="og:type" content="website">
-   <meta property="og:url" content="https://www.williammawang.com">
-   <meta property="og:image" content="https://williammawang.com/images/main-pic.jpg">
-   <meta property="og:description" content="Hello, I am a university student studying psychology. This is my website.">
-   <!-- Favicon -->
-   <link rel="shortcut icon" href="images/favicon.ico" type="image/favicon.ico">
-   <!-- Animation -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-   <!-- Icons -->
-   <link href="/assets/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
-   <link href="/assets/fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
-   <link href="/assets/fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
-   <!-- Scripts -->
-   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-   <!-- Styles -->
-   <link rel="stylesheet" href="/stylesheet/universal.css">
-   <link rel="stylesheet" href="/stylesheet/index.css">
+  <meta name="description" content="Hello, My name is William Wang, currently a university student studying psychology.">
+  <meta name="author" content="William Wang">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="William M. Wang">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.williammawang.com">
+  <meta property="og:image" content="https://williammawang.com/images/main-pic.jpg">
+  <meta property="og:description" content="Hello, I am a university student studying psychology. This is my website.">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/favicon.ico">
+  <!-- Animation -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" as="style" onload="this.rel='stylesheet'">
+  <!-- Icons -->
+  <link rel="preload" href="/assets/fontawesome-free-6.3.0-web/css/fontawesome.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="/assets/fontawesome-free-6.3.0-web/css/brands.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="/assets/fontawesome-free-6.3.0-web/css/solid.css" as="style" onload="this.rel='stylesheet'">
+  <!-- Scripts -->
+  <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- Styles -->
+  <link rel="preload" href="/stylesheet/universal.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="/stylesheet/index.css" as="style" onload="this.rel='stylesheet'">
 </head>
 
 <body>
@@ -41,10 +41,10 @@
           >
         </td>
         <td id="navigation">
-          <a href="/index.html">home.</a>
-          <a href="/pages/career.html">career.</a>
-          <a href="/pages/stuff.html">stuff.</a>
-          <a href="/pages/contact.html">contact.</a>
+          <a href="/index.html" rel="preload">home.</a>
+          <a href="/pages/career.html" rel="preload">career.</a>
+          <a href="/pages/stuff.html" rel="preload">stuff.</a>
+          <a href="/pages/contact.html" rel="preload">contact.</a>
         </td>
       </tr>
     </table>
@@ -138,6 +138,7 @@
       src="/images/my-avatar-bw.webp"
       alt="William Wang, in cartoonified black and white"
       class="bio-img"
+      loading="lazy"
     >
     <p>Hello! My name is William and I enjoy learning about whatever I can.</p>
     <p>
@@ -279,7 +280,7 @@
 
   <div class="hobbyContainer animate__animated">
     <div class="hobbyBubble">
-      <section id="fencingHobby" class="timeline">
+<section id="fencingHobby" class="timeline">
         <div class="title-wrapper">
           <div class="icon-box">
             <i class="fa-solid fa-coins"></i>
