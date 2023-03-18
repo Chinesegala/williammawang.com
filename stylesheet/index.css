@@ -1,280 +1,316 @@
-
 /*
 Profile image
 */
 #rightImage {
-  width: 100%;
-  height: 95.5vh;
-  background-image: linear-gradient(to top right, rgba(0,0,0,0), rgba(0,0,0,.2)), url(/images/main-pic.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 2%;
+	width: 100%;
+	height: 95.5vh;
+	background-image: linear-gradient(to top right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .2)), url(/images/main-pic.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 2%;
 }
 
 /*
 About section
 */
 #bio {
-  width: 100vw;
-  padding: 40px 0px 100px 120px;
-  font-weight: normal;
+	width: 100vw;
+	padding: 40px 0px 100px 120px;
+	font-weight: normal;
 }
+
 #bio .bio-img {
-  width: 30%;
-  height: auto;
-  margin-left: 30px;
-  margin-right: 200px;
-  border-radius: 50px;
-  float: right;
+	width: 30%;
+	height: auto;
+	margin-left: 30px;
+	margin-right: 200px;
+	border-radius: 50px;
+	float: right;
 }
 
 /*
 Sections
 */
 #section-list {
-  width: 82vw;
-  padding: 6vh 8vw;
-  font-weight: normal;
+	width: 82vw;
+	padding: 6vh 8vw;
+	font-weight: normal;
 }
+
 #section-list h1 {
-  padding: 5px 0px;
-  text-align: center;
-  font-weight: bolder;
+	padding: 5px 0px;
+	text-align: center;
+	font-weight: bolder;
 }
 
 .sectbubble {
-  margin-inline: 120px;
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 25px;
-  background-color: #493d61;
-  padding:50px;
+	margin-inline: 120px;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 25px;
+	background-color: #4e6097;
+	;
+	padding: 50px;
 }
-.sectbubble h2{
-  font-family: "Benz";
+
+.sectbubble h2 {
+	font-family: "Benz";
 }
+
 .section {
-  width: calc(50% - 10px);
-  height: calc(50% - 10px);
-  margin:5px;
-  border-radius:15px;
+	width: calc(50% - 10px);
+	height: calc(50% - 10px);
+	margin: 5px;
+	border-radius: 15px;
 }
 
 /*
 Hobby section
 */
 .hobbyBubble {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 25px;
-  background-color: #493d61;
-  padding:50px;
+	display: flex;
+	flex-wrap: wrap;
+	border-radius: 25px;
+	background-color: #4e6097;
+	padding: 50px;
 }
-.hobbyBubble h2{
-  font-family: "Benz";
+
+.hobbyBubble h2 {
+	font-family: "Benz";
 }
+
 #hobbies {
-  width: 80vw;
-  padding: 1vh 8vw;
-  font-weight: normal;
+	width: 80vw;
+	padding: 1vh 8vw;
+	font-weight: normal;
 }
+
 #hobbies h1 {
-  padding: 5px 0px;
-  border-bottom: 4px solid rgb(128, 159, 255);
-  width: 15%;
+	padding: 5px 0px;
+	border-bottom: 4px solid rgb(128, 159, 255);
+	width: 15%;
 }
 
 /*
 Resume
 */
-.article-title { margin-bottom: 30px; }
+.article-title {
+	margin-bottom: 30px;
+}
 
 .icon-box {
-  position: relative;
-  background: rgb(50, 50, 50);
-  width: 35px;
-  height: 35px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 40px;
-  font-size: 16px;
-  color: rgb(128, 159, 255);
-  box-shadow: var(--shadow-1);
-  z-index: 1;
+	position: relative;
+	background: rgb(50, 50, 50);
+	width: 35px;
+	height: 35px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 40px;
+	font-size: 16px;
+	color: rgb(128, 159, 255);
+	box-shadow: var(--shadow-1);
+	z-index: 1;
 }
 
 .icon-box::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--eerie-black-1);
-  border-radius: inherit;
-  z-index: -1;
+	content: "";
+	position: absolute;
+	inset: 1px;
+	background: var(--eerie-black-1);
+	border-radius: inherit;
+	z-index: -1;
 }
 
-.timeline { margin-bottom: 30px;}
+.timeline {
+	margin-bottom: 30px;
+}
 
 .timeline .title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 25px;
-  font-size: 20px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 25px;
+	font-size: 20px;
 }
 
 .timeline-list {
-  font-size: 16px;
-  margin-left: 45px;
-  font-style: normal;
-  list-style: none
+	font-size: 16px;
+	margin-left: 45px;
+	font-style: normal;
+	list-style: none
 }
 
-.timeline-item { position: relative; }
+.timeline-item {
+	position: relative;
+}
 
-.timeline-item:not(:last-child) { margin-bottom: 20px; }
+.timeline-item:not(:last-child) {
+	margin-bottom: 20px;
+}
 
 .timeline-item-title {
-  font-size: 18px;
-  line-height: 1.3;
-  margin-bottom: 7px;
+	font-size: 18px;
+	line-height: 1.3;
+	margin-bottom: 7px;
 }
 
 .timeline-list span {
-  color: rgb(128, 159, 255);
-  line-height: 1.6;
+	color: rgb(128, 159, 255);
+	line-height: 1.6;
 }
 
 .timeline-item:not(:last-child)::before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: -30px;
-  width: 1px;
-  height: calc(100% + 50px);
-  background: rgb(255, 255, 255);
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: -30px;
+	width: 1px;
+	height: calc(100% + 50px);
+	background: rgb(255, 255, 255);
 }
 
 .timeline-item::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -33px;
-  height: 6px;
-  width: 6px;
-  background: rgb(128, 159, 255);
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgb(50, 50, 50);
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: -33px;
+	height: 6px;
+	width: 6px;
+	background: rgb(128, 159, 255);
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px rgb(50, 50, 50);
 }
 
 .timeline-text {
-  line-height: 1.6;
-  font-style: normal;
+	line-height: 1.6;
+	font-style: normal;
 }
 
 .hobbyContainer {
-  display: flex;
-  justify-content: space-between;
-  padding: 1vh 8vw;
+	display: flex;
+	justify-content: space-between;
+	padding: 1vh 8vw;
 }
 
 /*
 Mobile version
 */
 @media (max-width: 1000px) {
-  #photos {
-    columns: 1;
-    column-gap: 0%;
-  }
-  #photos img {
-    margin: 2% 0px;
-  }
-  #photos img:hover {
-    transform: scale(1);
-    cursor: pointer;
-  }
-  #rightImage {
-    display: none;
-  }
-  #entry {
-    border: 0px;
-  }
-  #entry tr td {
-    width: 100%;
-    text-align: center;
-  }
-  #hello {
-    width: 92% !important;
-    height: 75vh;
-    padding-top: 20vh !important;
-    text-align: center;
-    padding: 0px 4%;
-  }
-  #hello table {
-    width: 100%;
-    margin-top: 6vh;
-  }
-  #hello table tr td {
-    text-align: center;
-  }
-  .main_btn {
-    padding: 6px 30px;
-    width: 25%;
-    margin: 4vh auto;
-    box-shadow: 0px 10px 20px rgba(128, 159, 255, 0.8);
-    background: transparent;
-    color: #fff;
-    text-align: center;
-  }
-  .main_btn:hover {
-    box-shadow: 0px 10px 40px rgba(128, 159, 255, 0.8);
-    cursor: pointer;
-  }
-  #contact table tr td {
-    width: 100%;
-    display: block;
-    padding-top: 50px;
-  }
-  #inner_table tr td {
-    padding: 10px 0px !important;
-  }
-  #contact form input {
-    width: 90%;
-  }
-  #contact form textarea {
-    width: 90%;
-  }
-  #hobbies h1 {
-    width: 100%;
-  }
-  #bio h1 {
-    width: 100%;
-  }
-  #contact h1 {
-    width: 100%;
-  }
-  header {
-    width: 96vw;
-    background: #262525;
-    padding: 4vh 2vw;
-    position: absolute;
-  }
-  #header table tr td {
-    width: 100%;
-    display: block;
-    text-align: center;
-    padding: 15px 0px;
-  }
-  #navigation a {
-    color: #ffffff;
-  }
-  .hobbyContainer {
-    flex-direction: column;
-  }
+	#photos {
+		columns: 1;
+		column-gap: 0%;
+	}
 
-  .timeline {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+	#photos img {
+		margin: 2% 0px;
+	}
+
+	#photos img:hover {
+		transform: scale(1);
+		cursor: pointer;
+	}
+
+	#rightImage {
+		display: none;
+	}
+
+	#entry {
+		border: 0px;
+	}
+
+	#entry tr td {
+		width: 100%;
+		text-align: center;
+	}
+
+	#hello {
+		width: 92% !important;
+		height: 75vh;
+		padding-top: 20vh !important;
+		text-align: center;
+		padding: 0px 4%;
+	}
+
+	#hello table {
+		width: 100%;
+		margin-top: 6vh;
+	}
+
+	#hello table tr td {
+		text-align: center;
+	}
+
+	.main_btn {
+		padding: 6px 30px;
+		width: 25%;
+		margin: 4vh auto;
+		box-shadow: 0px 10px 20px rgba(128, 159, 255, 0.8);
+		background: transparent;
+		color: #fff;
+		text-align: center;
+	}
+
+	.main_btn:hover {
+		box-shadow: 0px 10px 40px rgba(128, 159, 255, 0.8);
+		cursor: pointer;
+	}
+
+	#contact table tr td {
+		width: 100%;
+		display: block;
+		padding-top: 50px;
+	}
+
+	#inner_table tr td {
+		padding: 10px 0px !important;
+	}
+
+	#contact form input {
+		width: 90%;
+	}
+
+	#contact form textarea {
+		width: 90%;
+	}
+
+	#hobbies h1 {
+		width: 100%;
+	}
+
+	#bio h1 {
+		width: 100%;
+	}
+
+	#contact h1 {
+		width: 100%;
+	}
+
+	header {
+		width: 96vw;
+		background: #262525;
+		padding: 4vh 2vw;
+		position: absolute;
+	}
+
+	#header table tr td {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 15px 0px;
+	}
+
+	#navigation a {
+		color: #ffffff;
+	}
+
+	.hobbyContainer {
+		flex-direction: column;
+	}
+
+	.timeline {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
