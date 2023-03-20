@@ -1,13 +1,36 @@
+h1#about-body-header {
+	margin-block-start: 0px !important;
+	margin-top: 100px;
+	padding-top: 100px;
+	text-align: center;
+	font-family: "Benz";
+	font-size: 90px;
+}
+h1#body-header {
+	margin-block-start: 0px !important;
+	margin-top: 100px;
+	padding-top: 150px;
+	text-align: center;
+	font-family: "Benz";
+	font-size: 90px;
+}
+h2#body-header {
+	text-align: center;
+	font-family: "Benz";
+	font-size: 30px;
+}
+
 /*
 Profile image
 */
 #rightImage {
+	width: 30%;
+	height: auto;
+	margin-top: 60px;
+	margin-right: 50px;
+	border-radius: 50px;
+	float: right;
 	width: 100%;
-	height: 95.5vh;
-	background-image: linear-gradient(to top right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .2)), url(/images/main-pic.webp);
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-radius: 2%;
 }
 
 /*
@@ -23,7 +46,7 @@ About section
 	width: 30%;
 	height: auto;
 	margin-left: 30px;
-	margin-right: 200px;
+	margin-right: 240px;
 	border-radius: 50px;
 	float: right;
 }

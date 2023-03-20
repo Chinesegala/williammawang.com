@@ -37,11 +37,9 @@ body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
-
 p {
 	font-size: 17px;
 }
-
 @keyframes rotate {
 	0% {
 		transform: rotate(0deg);
@@ -50,7 +48,7 @@ p {
 	100% {
 		transform: rotate(360deg);
 	}
-}
+} 
 
 /*
 Header
@@ -147,7 +145,6 @@ h1#body-header {
 
 #entry {
 	width: 100%;
-	border: 2vh solid #4f4f4f;
 }
 
 #entry tr td {
@@ -155,14 +152,14 @@ h1#body-header {
 }
 
 #hello {
-	font-family: "DM Serif Display", sans-serif;
+	font-family: "Benz", sans-serif;
 	width: 84% !important;
-	height: 95vh;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: left;
-	padding: 0px 8%;
+	padding: 0px 10%;
 }
 
 #hello h1 {

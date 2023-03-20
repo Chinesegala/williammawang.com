@@ -27,9 +27,20 @@
       <!-- Styles -->
       <link rel="stylesheet" href="/stylesheet/stuff.css">
    </head>
+
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZ8RWTWDSR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZZ8RWTWDSR');
+</script>
+
    <body>
       <!-- Header -->
-      <header id="header" class="fixed-header animate__animated animate__slideInDown">
+      <header id="header" class="animate__animated animate__slideInDown">
          <table>
             <tr>
                <td id="logo"><a href="https://williammawang.com" style="text-decoration:none">williammawang.</a></td>
@@ -94,5 +105,6 @@
       </div>
       <!-- Script import: https://levelup.gitconnected.com/all-about-script-87fea475b976 -->
       <script src="/src/js/stuff.js"></script>
+      <script src="/src/js/universal.js"></script>
    </body>
 </html>
