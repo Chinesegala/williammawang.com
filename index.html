@@ -8,7 +8,7 @@
     gtag('js', new Date());
 
     gtag('config', 'G-ZZ8RWTWDSR');
-</script>
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO -->
@@ -37,11 +37,12 @@
    <link rel="stylesheet" href="/stylesheet/index.css">
    <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZ8RWTWDSR"></script>
+  <link rel="preload" href="/assets/fonts/gt.woff" as="font" crossorigin="anonymous">
 </head>
 
 <body>
   <!-- Header -->
-  <header id="header" class=" animate__animated animate__slideInDown">
+  <header id="header" class=" animate__animated animate__fadeIn">
     <table>
       <tr>
         <td id="logo">
@@ -67,8 +68,7 @@
         class="animate__animated animate__fadeIn"
         style="animation-delay:0.1s;"
       >
-        <h1><span class="auto-type"></span></h1>
-        <h1>I'm William Wang</h1>
+        <h1><span class="auto-type"></span><br> I'm William Wang</h1>
         <h2>
           I am a psychology student at<br>
           <a
@@ -78,7 +78,7 @@
             style="text-decoration:none"
           >
             UW-Madison</a
-          >.
+          >
         </h2>
 
         <table>
@@ -130,11 +130,22 @@
         </table>
       </td>
       <td>
-      <img src="/images/main-pic.webp" alt="Me, standing on top of a set of stairs, looking to the left"
+        <img src="/images/main-pic.webp"
+        alt="Me, standing on top of a set of stairs, looking to the left"
         id="rightImage"
         class="animate__animated animate__fadeIn"
         style="animation-delay:0.2s;"
-      ></td>
+        srcset="/images/main-pic-510w.webp 510w, 
+        /images/main-pic-1120w.webp 1120w, 
+        /images/main-pic-1500w.webp 1500w, 
+        /images/main-pic-1800w.webp 1800w, 
+        /images/main-pic-2048w.webp 2048w
+        "
+        sizes="50vw"
+        width="794"
+        height="529"
+        >
+    </td>
     </tr>
   </table>
 
@@ -142,10 +153,20 @@
   <h1 id="about-body-header">About</h1>
 
   <div id="bio" class="animate__animated">
-    <img id="bio-img"
-      src="/images/my-avatar-bw.webp"
-      alt="William Wang, in cartoonified black and white"
-      class="bio-img"
+    <img id="bio-img" 
+    src="/images/my-avatar-bw.webp" 
+    alt="William Wang, in cartoonified black and white" 
+    class="bio-img" 
+    srcset="/images/my-avatar-bw-256w.webp 256w,
+    /images/my-avatar-bw-900w.webp 900w,
+    /images/my-avatar-bw-1190w.webp 1190w,
+    /images/my-avatar-bw-1420w.webp 1420w,
+    /images/my-avatar-bw-1620w.webp 1620w,
+    /images/my-avatar-bw-1800w.webp 1800w
+    "
+    sizes="30vw"
+    width="794"
+    height="529"
     >
     <p>Hello! My name is William and I enjoy learning about whatever I can.</p>
     <p>

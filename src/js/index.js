@@ -28,9 +28,7 @@ var typed = new Typed(".auto-type", {
   loop: true
 })
 
-document.getElementById('rightImage').addEventListener('contextmenu', function (event) {
-   event.preventDefault();
-});
+
 document.getElementById('rightImage').setAttribute('draggable', false);
 
 document.getElementById('bio-img').addEventListener('contextmenu', function (event) {

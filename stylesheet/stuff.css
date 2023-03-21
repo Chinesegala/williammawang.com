@@ -25,6 +25,11 @@ Custom Font
 	src: local("/assets/fonts/benz.woff"),
 		url('/assets/fonts/benz.woff') format('woff');
 }
+@font-face {
+	font-family: 'gt';
+	src: local("/assets/fonts/gt/woff"),
+		url('/assets/fonts/gt.woff') format('woff');
+}
 
 /*
 Main
@@ -56,11 +61,10 @@ p {
 Header
 */
 header {
-	font-family: "DM Serif Display", sans-serif;
 	width: 92vw;
 	height: 5%;
 	padding: 6vh 4vw;
-	position: fixed !important;
+	position: fixed;
 	font-weight: bold;
 	background: transparent;
 	color: #fff;
@@ -181,7 +185,7 @@ h1#body-header {
   */
 .main_btn {
 	font-size: 18px;
-	font-family: "DM Serif Display", sans-serif;
+	font-family: "gt", sans-serif;
 	color: rgb(128, 159, 255);
 	background: transparent;
 	border: 3px solid rgb(128, 159, 255);
@@ -226,7 +230,7 @@ Footer
   Other
   */
 ::placeholder {
-	font-family: "Syne", sans-serif;
+	font-family: "gt", sans-serif;
 	color: #ffffff;
 }
 

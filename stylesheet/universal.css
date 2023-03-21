@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=DM Serif Display");
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Syne ");
-@import url("https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap");
-
 /*
 Dark theme
 */
@@ -25,15 +20,19 @@ Custom Font
 	src: local("/assets/fonts/benz.woff"),
 		url('/assets/fonts/benz.woff') format('woff');
 }
+@font-face {
+	font-family: 'gt';
+	src: local("/assets/fonts/gt/woff"),
+		url('/assets/fonts/gt.woff') format('woff');
+}
 
 /*
 Main
 */
 body {
-	font-family: "Lato", sans-serif;
+	font-family: "gt", sans-serif;
 	padding: 0px;
 	margin: 0px;
-	max-width: 100vw;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
@@ -54,7 +53,6 @@ p {
 Header
 */
 header {
-	font-family: "DM Serif Display", sans-serif;
 	width: 92vw;
 	height: 5%;
 	padding: 6vh 4vw;
