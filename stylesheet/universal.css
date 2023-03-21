@@ -5,6 +5,8 @@ Dark theme
 	body {
 		color: #eee;
 		background: #262525;
+		height: 100vh;
+		overflow: auto;
 	}
 
 	body a {
@@ -49,35 +51,24 @@ p {
 	}
 } 
 
-/*
-Header
-*/
 header {
-	width: 92vw;
-	height: 5%;
-	padding: 6vh 4vw;
-	position: fixed;
-	font-weight: bold;
-	background: transparent;
-	color: #fff;
-	transition: 0.4s ease-in-out;
-	z-index: 2;
-}
-
-header table {
 	width: 100%;
-}
-
-.fixed-header {
-	background: rgba(48, 47, 47, 0.98);
-	color: #ffffff;
+	height: 5%;
+	padding: 6vh 2vw;
+	position: fixed;
+	top: 0;
+	font-weight: bold;
+	background: rgba(38, 37, 37, 0.98);
+	color: #fff;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
-	padding: 2vh 4vw;
+	z-index:2;
+	box-sizing:border-box;
 }
 
-.fixed-header #navigation a:hover {
-	border-bottom: 2px solid rgb(128, 159, 255);
+#navigation a:hover {
+	border-bottom:2px solid rgb(128,159,255);
 }
+
 
 /*
 wmw. logo

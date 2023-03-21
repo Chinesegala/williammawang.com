@@ -1,5 +1,5 @@
 // Header //
-var width = $(window).width();
+/*var width = $(window).width();
 window.onscroll = function () {
    // Sets nav bar to fixed when page width exceeds #
    if (width >= 1000) {
@@ -12,7 +12,7 @@ window.onscroll = function () {
          $("#header").removeClass("fixed-header");
       }
    }
-};
+};*/
 
 
 $(document).ready(function () {
