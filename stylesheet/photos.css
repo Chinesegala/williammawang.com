@@ -2,7 +2,7 @@
 Header
 */
 header {
-	font-family: "DM Serif Display", sans-serif;
+	font-family: "atkinson-bold", sans-serif;
 	width: 92vw;
 	height: 5%;
 	padding: 6vh 4vw;
@@ -35,7 +35,7 @@ h1#body-header {
 	margin-top: 100px;
 	padding-top: 300px;
 	text-align: center;
-	font-family: "Benz";
+	font-family: "atkinson-bold";
 	font-size: 90px;
 }
 

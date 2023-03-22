@@ -6,6 +6,7 @@
 	border-radius: 50px;
 	float: right;
 	width: 100%;
+	image-rendering:auto;
 }
 
 #career {

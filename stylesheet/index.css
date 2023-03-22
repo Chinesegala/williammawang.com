@@ -176,7 +176,7 @@
   }
   .hobbyContainer {
 	display: flex;
-	justify-content: space-between;
+	justify-content:space-evenly;
 	padding: 1vh 8vw;
   }
   /*
