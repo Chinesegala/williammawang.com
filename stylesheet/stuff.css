@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=DM Serif Display");
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Syne ");
-@import url("https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap");
-
 /*
 Dark theme
 */
@@ -17,25 +12,20 @@ Dark theme
 	}
 }
 
-/*
-Custom Font
-*/
 @font-face {
-	font-family: 'Benz';
-	src: local("/assets/fonts/benz.woff"),
-		url('/assets/fonts/benz.woff') format('woff');
-}
-@font-face {
-	font-family: 'gt';
-	src: local("/assets/fonts/gt/woff"),
-		url('/assets/fonts/gt.woff') format('woff');
-}
+	font-family: 'atkinson';
+	src: local("/assets/fonts/benz.woff"), url('/assets/fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2');
+  }
+  @font-face {
+	font-family: 'atkinson-bold';
+	src: local("/assets/fonts/Atkinson-Hyperlegible-Bold-102a.woff2"), url('/assets/fonts/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2');
+  }
 
 /*
 Main
 */
 body {
-	font-family: "Lato", sans-serif;
+	font-family: "atkinson", sans-serif;
 	padding: 0px;
 	margin: 0px;
 	max-width: 100vw;
@@ -61,30 +51,20 @@ p {
 Header
 */
 header {
-	width: 92vw;
-	height: 5%;
-	padding: 6vh 4vw;
-	position: fixed;
-	font-weight: bold;
-	background: transparent;
-	color: #fff;
-	transition: 0.4s ease-in-out;
-	z-index: 2;
+  font-family: "atkinson-bold";
+  width: 100%;
+  padding: 3vh 5vw;
+  position: fixed;
+  top: 0;
+  font-weight: bold;
+  background: rgba(38, 37, 37, 0.98);
+  color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+  z-index: 2;
+  box-sizing: border-box;
 }
-
-header table {
-	width: 100%;
-}
-
-.fixed-header {
-	background: rgba(48, 47, 47, 0.98);
-	color: #ffffff;
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
-	padding: 2vh 4vw;
-}
-
-.fixed-header #navigation a:hover {
-	border-bottom: 2px solid rgb(128, 159, 255);
+#navigation a:hover {
+  border-bottom: 2px solid #809fff;
 }
 
 /*
@@ -155,7 +135,7 @@ h1#body-header {
 	margin-top: 100px;
 	padding-top: 300px;
 	text-align: center;
-	font-family: "Benz";
+	font-family: "atkinson-bold";
 	font-size: 90px;
 }
 
@@ -185,7 +165,7 @@ h1#body-header {
   */
 .main_btn {
 	font-size: 18px;
-	font-family: "gt", sans-serif;
+	font-family: "atkinson-bold", sans-serif;
 	color: rgb(128, 159, 255);
 	background: transparent;
 	border: 3px solid rgb(128, 159, 255);
@@ -230,7 +210,7 @@ Footer
   Other
   */
 ::placeholder {
-	font-family: "gt", sans-serif;
+	font-family: "atkinson", sans-serif;
 	color: #ffffff;
 }
 
@@ -288,13 +268,13 @@ button:focus {
 h1#body-header {
 	margin-top: 100px;
 	text-align: center;
-	font-family: "Benz";
+	font-family: "atkinson-bold";
 	font-size: 90px;
 }
 
 h2#body-header {
 	text-align: center;
-	font-family: "Benz";
+	font-family: "atkinson-bold";
 	font-size: 30px;
 }
 
