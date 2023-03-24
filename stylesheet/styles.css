@@ -258,6 +258,19 @@ h2#body-header {
 		font-family: "atkinson-bold";
 		font-size: 30px;
 	}
+	header {
+		width: 100%;
+		background: #262525;
+		padding: 4vh 2vw;
+		position: absolute;
+		font-size: 14px;
+	 }
+	#header table tr td {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 15px 0px;
+	}
 	#hello h1 {
 		font-size: 40px;
 		word-wrap: break-word;
@@ -306,7 +319,9 @@ h2#body-header {
 	.main_btn:hover {
 	  box-shadow: 0px 10px 40px rgba(128, 159, 255, 0.8);
 	  cursor: pointer;
-	}
+	}  /*
+	Sections
+	*/
   #section-list {
 	width: 82vw;
 	padding: 6vh 8vw;
@@ -318,8 +333,8 @@ h2#body-header {
 	font-weight: bolder;
   }
   .sectbubble {
-	margin-left: 10vh;
-	margin-right: 10vh;
+	margin-left: 20vh;
+	margin-right: 20vh;
 	display: flex;
 	flex-wrap: wrap;
 	border-radius: 25px;
@@ -357,19 +372,6 @@ h2#body-header {
 	}
 	#contact h1 {
 	  width: 100%;
-	}
-	header {
-	  width: 100%;
-	  background: #262525;
-	  padding: 4vh 2vw;
-	  position: absolute;
-	  font-size: 14px;
-	}
-	#header table tr td {
-	  width: 100%;
-	  display: block;
-	  text-align: center;
-	  padding: 15px 0px;
 	}
 	#navigation a {
 	  color: #ffffff;
