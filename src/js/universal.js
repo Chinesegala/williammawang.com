@@ -1,20 +1,3 @@
-// Header //
-/*var width = $(window).width();
-window.onscroll = function () {
-   // Sets nav bar to fixed when page width exceeds #
-   if (width >= 1000) {
-      if (
-         document.body.scrollTop > 80 ||
-         document.documentElement.scrollTop > 80
-      ) {
-         $("#header").addClass("fixed-header");
-      } else {
-         $("#header").removeClass("fixed-header");
-      }
-   }
-};*/
-
-
 $(document).ready(function () {
    $("a").on("click", function (event) {
       if (this.hash !== "") {
