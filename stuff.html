@@ -43,9 +43,9 @@
                <td id="logo"><a href="https://williammawang.com" style="text-decoration:none">williammawang.</a></td>
                <td id="navigation">
                   <a href="/index.html">home.</a>
-                  <a href="/pages/career.html">career.</a>
-                  <a href="/pages/stuff.html">stuff.</a>
-                  <a href="/pages/contact.html">contact.</a>
+                  <a href="/career.html">career.</a>
+                  <a href="/stuff.html">stuff.</a>
+                  <a href="/contact.html">contact.</a>
                </td>
             </tr>
          </table>
@@ -78,6 +78,139 @@
             </a>
          </div>
       </div>
+
+      <style>
+.circle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(80, 80, 80);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.circle-button:hover {  
+  cursor: pointer; /* Change the mouse cursor to a pointer on hover */
+}
+       
+         .circle-button .line {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.circle-button .line:nth-child(1) {
+  transform: translateY(-3px);
+}
+
+.circle-button .line:nth-child(2) {
+  transform: translateY(3px);
+}
+
+.circle-button.close .line:nth-child(1) {
+  transform: rotate(45deg) translate(0px, 0px);
+}
+
+.circle-button.close .line:nth-child(2) {
+  transform: rotate(-45deg) translate(0px, 0px);
+}
+
+       
+         .menu {
+           position: fixed;
+           bottom: 20px;
+           right: 20px;
+           width: 250px;
+           height: 250px;
+           background-color: rgba(80,80,80, 0.98);
+           opacity: 0;
+           transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+           border-radius: 10px;
+           transform-origin: bottom right;
+           transform: scale(0);
+         }
+       
+         .menu.show {
+           opacity: 1;
+           transform: scale(1);
+           transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+         }
+       
+         .menu ul {
+           list-style: none;
+           margin: 0;
+           padding: 0;
+         }
+       
+         .menu li {
+           margin: 10px;
+         }
+
+         .menu button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px; /* Add rounded corners */
+  background-color: rgb(85,85,85);
+  color: white;
+  font-size: 16px;
+}
+
+.menu button:last-child {
+  margin-bottom: 0;
+}
+
+.menu button:hover {
+  background-color: rgb(100,100,100); /* Change the background color on hover */
+  cursor: pointer; /* Change the mouse cursor to a pointer on hover */
+}
+       </style>
+       
+       <div class="circle-button">
+         <div class="line"></div>
+         <div class="line"></div>
+       </div>       
+       
+       <div class="menu">
+         <ul>
+           <li><button onclick="location.href='/index.html'">Home</button></li>
+           <li><button onclick="location.href='/career.html'">Career</button></li>
+           <li><button onclick="location.href='/stuff.html'" style="text-decoration:none">Stuff</button></li>
+           <li><button onclick="location.href='/contact.html'" style="text-decoration:none">Contact</button></li>
+         </ul>
+       </div>
+       
+       <script>
+const circleButton = document.querySelector('.circle-button');
+const menu = document.querySelector('.menu');
+
+circleButton.addEventListener('click', () => {
+  circleButton.classList.toggle('close');
+  menu.classList.toggle('show');
+});
+
+document.addEventListener('click', (event) => {
+  if (!menu.contains(event.target) && !circleButton.contains(event.target)) {
+    circleButton.classList.remove('close');
+    menu.classList.remove('show');
+  }
+});
+
+       </script>
+       
+       
+          
+
       <!-- Back-to-top button -->
       <button id="back-to-top" title="Back to top">
       <i class="fa-solid fa-arrow-up"></i>
@@ -99,7 +232,8 @@
          <div>&nbsp;</div>
          © 2023 williammawang.<br>
          <a href="https://williammawang.com">Website link</a>
-      </div>
+      </div>     
+
       <!-- Script import: https://levelup.gitconnected.com/all-about-script-87fea475b976 -->
       <script src="/src/js/stuff.js"></script>
       <script src="/src/js/universal.js"></script>

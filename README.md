@@ -7,3 +7,7 @@
 | Light Blue     | #809fff  |
 | Dark Grey      | #262525  |
 
+## To Do
+- Mobile friendliness
+- Speed optimization
+- SEO improvement
