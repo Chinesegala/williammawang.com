@@ -288,3 +288,61 @@ h2#body-header {
 .fixed-header #navigation a:hover {
 	border-bottom: 2px solid rgb(128, 159, 255);
 }
+
+ /*
+  Mobile version
+  */
+  @media (max-width: 600px) {
+	p {
+		font-size: 12px;
+	}
+	h1#first-body-header {
+		margin-block-start: 0px !important;
+		margin-top: 100px;
+		padding-top: 250px;
+		text-align: center;
+		font-family: "atkinson-bold";
+		font-size: 4rem;
+	}
+	h1#body-header {
+		margin-block-start: 0px !important;
+		margin-top: 100px;
+		padding-top: 300px;
+		text-align: center;
+		font-family: "atkinson-bold";
+		font-size: 4rem;
+	}
+	h2#body-header {
+		text-align: center;
+		font-family: "atkinson-bold";
+		font-size: 30px;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	header {
+		width: 100%;
+		background: #262525;
+		padding: 4vh 2vw;
+		position: absolute;
+		font-size: 14px;
+	 }
+	#header table tr td {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 15px 0px;
+	}
+	.main_btn {
+	  padding: 6px 30px;
+	  width: 25%;
+	  margin: 4vh auto;
+	  box-shadow: 0px 10px 20px rgba(128, 159, 255, 0.8);
+	  background: transparent;
+	  color: #fff;
+	  text-align: center;
+	}
+	.main_btn:hover {
+	  box-shadow: 0px 10px 40px rgba(128, 159, 255, 0.8);
+	  cursor: pointer;
+	}
+  }
