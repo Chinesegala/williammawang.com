@@ -530,6 +530,23 @@
     </ul>
   </div>
 
+  <script>
+    const circleButton = document.querySelector('.circle-button');
+    const menu = document.querySelector('.menu');
+ 
+    circleButton.addEventListener('click', () => {
+      circleButton.classList.toggle('close');
+      menu.classList.toggle('show');
+    });
+ 
+    document.addEventListener('click', (event) => {
+      if (!menu.contains(event.target) && !circleButton.contains(event.target)) {
+        circleButton.classList.remove('close');
+        menu.classList.remove('show');
+      }
+    });
+  </script>
+
   <!-- Back-to-top button -->
   <button id="back-to-top" title="Back to top">
     <i class="fa-solid fa-arrow-up"></i>
