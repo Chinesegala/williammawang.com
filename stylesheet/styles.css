@@ -304,18 +304,24 @@ h2#body-header {
 		flex-direction: column;
 	  }
 	table#entry tr td#hello {
+		max-width: 100%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
 		align-items: center;
 	}
 	table#entry tr td#rightImageCell {
 		display: none;
-	  }
+	}
+	table#entry tr td#careerImageCell {
+		display: none;
+	}
 	#entry tr td {
 	  text-align: center;
 	}
 	#hello {
 	  height: 100vh;
 	  text-align: center;
-	  overflow-x: hidden;
 	  display: flex;
 	  justify-content: center;
 	  align-items: center;
