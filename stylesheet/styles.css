@@ -131,8 +131,8 @@ h2#body-header {
 	*/
   .social {
 	color: #809fff;
-	font-size: 23px;
-	padding: 12px 17px;
+	font-size: 25px;
+	padding: 10px 10px;
 	border-radius: 50%;
 	background: transparent;
 	transition: 0.4s ease-in-out;
@@ -234,6 +234,9 @@ h2#body-header {
   Mobile version
   */
   @media (max-width: 900px) {
+	/*
+	Main
+	*/
 	body {
 		max-width: 100%;
 	  }
@@ -243,6 +246,9 @@ h2#body-header {
 	p {
 		font-size: 12px;
 	}
+	/*
+	Index
+	*/
 	h1#first-body-header {
 		margin-block-start: 0px !important;
 		margin-top: 100px;
@@ -276,7 +282,8 @@ h2#body-header {
 	#hello h1 {
 		font-size: 40px;
 		word-wrap: break-word;
-	  }
+	}
+
 	#photos {
 	  columns: 1;
 	  column-gap: 0%;
@@ -341,23 +348,34 @@ h2#body-header {
 	text-align: center;
 	font-weight: bolder;
   }
-  .sectbubble {
-	margin-left: 20vh;
-	margin-right: 20vh;
-	display: flex;
+  div.sectbubble {
+	margin-left: 1vw;
+	margin-right: 1vw;
+	display:block;
 	flex-wrap: wrap;
 	border-radius: 25px;
 	background-color: #4e6097;
-	padding: 50px;
+	padding: 5vh 8vw;
   }
-  .sectbubble h2 {
+  div.sectbubble h2 {
 	font-family: "atkinson-bold";
+  }
+  div.sectbubble div.section {
+	width: fit-content;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
   }
   .section {
 	width: calc(50% - 10px);
 	height: calc(50% - 10px);
 	margin: 5px;
 	border-radius: 15px;
+  }
+  .hobbyContainer {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding: 1vh 8vw;
   }
 	#contact table tr td {
 	  width: 100%;
