@@ -332,13 +332,7 @@ h2#body-header {
 		font-size: 25px;
 	}
 	header {
-		align-items: center;
-		width: 100%;
-		background: #262525;
-		padding: 4vh 2vw;
-		position: absolute;
-		font-size: 14px;
-		text-align: center;
+		display: none;
 	 }
 	#header table tr td {
 		width: 100%;

@@ -234,6 +234,12 @@ h2#body-header {
   Mobile version
   */
   @media (max-width: 900px) {
+	body {
+		max-width: 100%;
+	  }
+	* {
+		max-width: 100%;
+	  }
 	p {
 		font-size: 12px;
 	}
@@ -259,11 +265,7 @@ h2#body-header {
 		font-size: 30px;
 	}
 	header {
-		width: 100%;
-		background: #262525;
-		padding: 4vh 2vw;
-		position: absolute;
-		font-size: 14px;
+		display: none;
 	 }
 	#header table tr td {
 		width: 100%;
@@ -290,14 +292,21 @@ h2#body-header {
 		display: none;
 	}
 	#entry {
-	  border: 0px;
+		border: 0px;
+		display: flex;
+		flex-direction: column;
+	  }
+	table#entry tr td#hello {
+		align-items: center;
 	}
+	table#entry tr td#rightImageCell {
+		display: none;
+	  }
 	#entry tr td {
 	  text-align: center;
 	}
 	#hello {
 	  height: 100vh;
-	  padding-top: 10vh;
 	  text-align: center;
 	  overflow-x: hidden;
 	  display: flex;
@@ -357,6 +366,9 @@ h2#body-header {
 	}
 	#inner_table tr td {
 	  padding: 10px 0px !important;
+	}
+	table#entry tr td.contact-form{
+		display: none;
 	}
 	#contact form input {
 	  width: 90%;

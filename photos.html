@@ -93,6 +93,165 @@
             </div>
          </div>
       </div>
+
+      
+  <style>
+   @media screen and (max-width: 600px) {
+     .circle-button {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+   }
+
+   @media screen and (min-width: 601px) {
+     .circle-button {
+       display: none;
+     }
+   }
+
+   .circle-button {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background-color: rgb(80, 80, 80);
+     transition: all 0.3s ease-in-out;
+     z-index: 1;
+   }
+
+   .circle-button:hover {
+     cursor: pointer;
+     /* Change the mouse cursor to a pointer on hover */
+   }
+
+   .circle-button .line {
+     position: absolute;
+     width: 30px;
+     height: 3px;
+     background-color: white;
+     transition: transform 0.3s ease-in-out;
+   }
+
+   .circle-button .line:nth-child(1) {
+     transform: translateY(-3px);
+   }
+
+   .circle-button .line:nth-child(2) {
+     transform: translateY(3px);
+   }
+
+   .circle-button.close .line:nth-child(1) {
+     transform: rotate(45deg) translate(0px, 0px);
+   }
+
+   .circle-button.close .line:nth-child(2) {
+     transform: rotate(-45deg) translate(0px, 0px);
+   }
+
+
+   .menu {
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     width: 250px;
+     height: 300px;
+     background-color: rgba(80, 80, 80, 0.98);
+     opacity: 0;
+     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+     border-radius: 10px;
+     transform-origin: bottom right;
+     transform: scale(0);
+   }
+
+   .menu.show {
+     opacity: 1;
+     transform: scale(1);
+     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+   }
+
+   .menu ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+   }
+
+   .menu li {
+     margin: 10px;
+   }
+
+   .menu button {
+      font-size: 14px;
+      font-family: "atkinson-bold", sans-serif;
+      color: #809fff;
+      background: transparent;
+      border: 3px solid #809fff;
+      padding: 8px 2px;
+      width: 100%;
+      border-radius: 80px;
+      font-weight: bold;
+      transition: 0.4s ease-in-out;
+      text-align: center;
+      align-items: center;
+    }
+
+    .menu button:last-child {
+      margin-bottom: 0;
+    }
+
+    .menu button:hover {
+      cursor: pointer;
+      color: #fff;
+      background: #809fff;
+      cursor: pointer;
+    }
+
+    .menu ul li#logo {
+      align-items: center;
+      text-align: center;
+      font-size: 20px;
+      font-family: "atkinson-bold", sans-serif;
+      color: #809fff;
+      margin-bottom: 20px;
+      padding-left: 40px;
+      padding-top: 10px;
+    }
+  </style>
+
+  <div class="circle-button">
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <div class="menu">
+    <ul>
+      <li id="logo"><a href="https://williammawang.com" style="text-decoration:none">williammawang.</a></li>
+      <li><button onclick="location.href='/index.html'">Home</button></li>
+      <li><button onclick="location.href='/career.html'">Career</button></li>
+      <li><button onclick="location.href='/stuff.html'" style="text-decoration:none">Stuff</button></li>
+      <li><button onclick="location.href='/contact.html'" style="text-decoration:none">Contact</button></li>
+    </ul>
+  </div>
+
+ <script>
+   const circleButton = document.querySelector('.circle-button');
+   const menu = document.querySelector('.menu');
+
+   circleButton.addEventListener('click', () => {
+     circleButton.classList.toggle('close');
+     menu.classList.toggle('show');
+   });
+
+   document.addEventListener('click', (event) => {
+     if (!menu.contains(event.target) && !circleButton.contains(event.target)) {
+       circleButton.classList.remove('close');
+       menu.classList.remove('show');
+     }
+   });
+ </script>
+
       <!-- Back-to-top button -->
       <button id="back-to-top" title="Back to top">
       <i class="fa-solid fa-arrow-up"></i>
