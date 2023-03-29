@@ -15,22 +15,6 @@ $(document).ready(function () {
    });
 });
 
-// Menu //
-const circleButton = document.querySelector('.circle-button');
-const menu = document.querySelector('.menu');
-
-circleButton.addEventListener('click', () => {
-  circleButton.classList.toggle('close');
-  menu.classList.toggle('show');
-});
-
-document.addEventListener('click', (event) => {
-  if (!menu.contains(event.target) && !circleButton.contains(event.target)) {
-    circleButton.classList.remove('close');
-    menu.classList.remove('show');
-  }
-});
-
 // Back to top function //
 var button = document.getElementById("back-to-top");
 window.addEventListener("scroll", function () {
