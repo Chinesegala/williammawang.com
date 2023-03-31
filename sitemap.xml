@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://williammawang.com/</loc>
+    <lastmod>2023-03-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+      <image:image>
+        <image:loc>https://williammawang.com/images/main-pic-1024w.webp</image:loc>
+        <image:title>Me, standing on top of a set of stairs, looking to the left</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://williammawang.com/images/my-avatar-bw-1420w.webp</image:loc>
+        <image:title>William Wang, in cartoonified black and white</image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://williammawang.com/contact</loc>
+    <lastmod>2023-03-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://williammawang.com/career</loc>
+    <lastmod>2023-03-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+      <image:image>
+        <image:loc>https://williammawang.com/images/UWConvocation2022-1024w.webp</image:loc>
+        <image:title></image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://williammawang.com/stuff</loc>
+    <lastmod>2023-03-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
