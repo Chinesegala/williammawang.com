@@ -8,22 +8,20 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-ZZ8RWTWDSR');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO -->
-  <title>Coming Soon | WMW</title>
-  <meta name="description"
-    content="Hello, My name is William Wang, currently a university student studying psychology.">
+  <title>Stuff | WMW</title>
+  <meta name="discription" content="Stuff.">
   <meta name="author" content="William Wang">
   <!-- OpenGraph -->
-  <meta property="og:title" content="404">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.williammawang.com">
-  <meta property="og:image" content="https://williammawang.com/images/main-pic.jpg">
-  <meta property="og:description" content="404">
+  <meta property="og:title" content="Stuff - William Ma Wang" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.williammawang.com" />
+  <meta property="og:image" content="https://williammawang.com/images/main-pic.jpg" />
+  <meta property="og:discription" content="Stuff" />
   <!-- Favicon -->
   <link rel="icon" href="/images/favicon.ico" type="images/favicon.ico">
   <!-- Animation -->
@@ -33,21 +31,18 @@
   <link href="/assets/fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
   <link href="/assets/fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <!-- Styles -->
+  <link rel="stylesheet" href="/stylesheet/styles.css">
   <link rel="stylesheet" href="/stylesheet/stuff.css">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZ8RWTWDSR"></script>
 </head>
 
 <body>
   <!-- Header -->
-  <header id="header" class="animate__animated animate__slideInDown">
+  <header id="header" class="animate__animated animate__fadeIn">
     <table>
       <tr>
-        <td id="logo">
-          <a href="https://williammawang.com" style="text-decoration:none">williammawang.</a>
-        </td>
+        <td id="logo"><a href="https://williammawang.com" style="text-decoration:none">williammawang.</a></td>
         <td id="navigation">
           <a href="/index.html">home.</a>
           <a href="/career.html">career.</a>
@@ -56,14 +51,10 @@
       </tr>
     </table>
   </header>
-
-  <div id="free-sect" class="animate__animated animate__fadeIn">
-    <h1 id="body-header" class="animate__animated animate__fadeIn">Coming soon.</h1>
-    <h2 id="body-header" class="animate__animated animate__fadeIn">
-     
-    </h2>
+  <!-- Sections -->
+  <div id="blog-sect" class="bubble animate__animated animate__fadeIn">
+    <h1 id="first-body-header-stuff">COMING SOON.</h1>
   </div>
-
 
   <style>
     @media screen and (max-width: 600px) {
@@ -127,7 +118,7 @@
       bottom: 20px;
       right: 20px;
       width: 250px;
-      height: 300px;
+      height: 330px;
       background-color: rgba(80, 80, 80, 0.98);
       opacity: 0;
       transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -222,12 +213,36 @@
     });
   </script>
 
+  <!-- Back-to-top button -->
+  <button id="back-to-top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <!-- Footer -->
+  <div id="footer">
+    <div>
+      <a href="mailto:wmwwebemail@gmail.com" class="social">
+        <i class="fa-solid fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/williammawang" class="social">
+        <i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://unsplash.com/@wmwang" class="social">
+        <i class="fa-solid fa-image"></i></a>
+      <a href="https://github.com/Chinesegala" class="social">
+        <i class="fab fa-github"></i></a>
+      <a href="https://open.spotify.com/user/21zdwau7mfrwuuywowr5uczci" class="social">
+        <i class="fa-brands fa-spotify"></i></a>
+    </div>
+    <div>&nbsp;</div>
+    © 2023 williammawang.<br>
+    <a href="/site.html">How i made this website</a>
+  </div>
+
   <!-- Script import: https://levelup.gitconnected.com/all-about-script-87fea475b976 -->
-  <script src="/src/js/universal.js"></script>
   <script async src="//static.getclicky.com/101402491.js"></script>
   <noscript>
     <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101402491ns.gif" /></p>
   </noscript>
+  <script src="/src/js/stuff.js"></script>
+  <script src="/src/js/universal.js"></script>
 </body>
 
 </html>
