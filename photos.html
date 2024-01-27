@@ -1,222 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZ8RWTWDSR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-ZZ8RWTWDSR');
-</script>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- SEO -->
-      <title>William M. Wang | Photos</title>
-      <meta name="description" content="Hello, My name is William Wang, currently a university student studying psychology.">
-      <meta name="author" content="William Wang">
-      <!-- OpenGraph -->
-      <meta property="og:title" content="William M. Wang"/>
-      <meta property="og:type" content="website"/>
-      <meta property="og:url" content="https://www.williammawang.com"/>
-      <meta property="og:image" content="https://williammawang.com/images/main-pic.jpg"/>
-      <meta property="og:description" content="My Photos"/>
-      <!-- Favicon -->
-      <link rel="icon" href="/images/favicon.ico" type="images/favicon.ico">
-      <!-- Animation -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-      <!-- Icons -->
-      <link href="/assets/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
-      <link href="/assets/fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
-      <link href="/assets/fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
-      <!-- Scripts -->
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-      <!-- Styles -->
-      <link rel="stylesheet" href="/stylesheet/styles.css">
-      <link rel="stylesheet" href="/stylesheet/photos.css">
-   </head>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZZ8RWTWDSR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-   <body>
-      <!-- Header -->
-      <header id="header" class="animate__animated animate__fadeIn">
-         <table>
-            <tr>
-               <td id="logo"><a href="https://williammawang.com" style="text-decoration:none">williammawang.</a></td>
-               <td id="navigation">
-                  <a href="/index.html">home.</a>
-                  <a href="/career.html">career.</a>
-                  <a href="/stuff.html">stuff.</a>
-               </td>
-            </tr>
-         </table>
-      </header>
-      <!-- About section -->
-      <div id="photo-sect" class="animate__animated animate__fadeIn">
-         <h1 id="body-header">Photos</h1>
+    gtag('config', 'G-ZZ8RWTWDSR');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <title>William M. Wang | Photos</title>
+  <meta name="description"
+    content="Hello, My name is William Wang, currently a university student studying psychology.">
+  <meta name="author" content="William Wang">
+  <!-- OpenGraph -->
+  <meta property="og:title" content="William M. Wang" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.williammawang.com" />
+  <meta property="og:image" content="https://williammawang.com/images/main-pic.jpg" />
+  <meta property="og:description" content="My Photos" />
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicon.ico" type="images/favicon.ico">
+  <!-- Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Icons -->
+  <link href="/assets/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+  <link href="/assets/fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
+  <link href="/assets/fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
+  <!-- Scripts -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="/stylesheet/styles.css">
+  <link rel="stylesheet" href="/stylesheet/photos.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="animate__animated animate__fadeIn">
+    <table>
+      <tr>
+        <td id="logo"><a href="https://williammawang.com" style="text-decoration:none">williammawang.</a></td>
+        <td id="navigation">
+          <a href="/index.html">home.</a>
+          <a href="/career.html">career.</a>
+          <a href="/stuff.html">stuff.</a>
+        </td>
+      </tr>
+    </table>
+  </header>
+  <!-- About section -->
+  <div id="photo-sect" class="animate__animated animate__fadeIn">
+    <h1 id="body-header">Photos</h1>
+  </div>
+  <div id="magnify">
+    <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+    <div id="img_here"></div>
+  </div>
+  <div id="photo-sect" class="animate__animated animate__fadeIn" style="animation-delay:0.3s;">
+    <div id="photo-contain">
+      <div id="photos">
+        <img onclick="magnify($(this).attr('src'))"
+          src="https://lh3.googleusercontent.com/pw/AMWts8CKC2OqRBiDe8WFlZaOOIhUwQA3vRXckjXlJo5n305kVuhYT0r7rQKMEIy_y_Js5D53KLQj69uFhB0sJIspoXjFwIHEyS035oCsNfEhUt0AZ0G58iMUMWlvj5feCGCsct_poAmseSurvY64atCpV1OX=w1350-h1013-no"
+          alt="Me, 2012, in fencing gear for the first time">
+        <img onclick="magnify($(this).attr('src'))" src="https://unsplash.com/photos/ID0XfUubM_c"
+          alt="Me, 2016, a maple syrup lolipop">
+        <img onclick="magnify($(this).attr('src'))"
+          src="https://lh3.googleusercontent.com/pw/AMWts8CLjNCUisMSBgRagPftPZGSOrZi2EvCIuoKVjeefAvWbJrX7NMfBqueKVUY8wymhzLC7JgXtySPv2gRVlrJN78zvzcbkgsH7B4svAJ4AxQ9LS4YOiEfYT3BKcvIDFWmzua7-L_a3NWlriXW2s3q1v2i=w1358-h1018-no?authuser=0"
+          alt="Me, 2017, miniature broken city">
+        <img onclick="magnify($(this).attr('src'))"
+          src="https://lh3.googleusercontent.com/pw/AMWts8D3jfqwhpoekRz-daEWZLRXgVCwnmBbjvrEQaeQoImstTSNuMOMQcGFmYbzeKy8sw0mnWCBopye4ReYdpG8e5KKIvEZsEJVBFfXNtEY6CbQFkb3W9heYZllyNkLhJ9toaNb3Oiq_qikaHWB2Qh5KUQQ=s1018-no?authuser=0"
+          alt="Me, 2017, black and white windmill tower">
+        <img onclick="magnify($(this).attr('src'))"
+          src="https://lh3.googleusercontent.com/088X3yfeg7y4NNhgaVQR5xKiSk4hoC6nJMQnrDcFxaZiaOWD3BhM5fyoOrrFuD6mq75X6Uy6cKT6I6Rj20AxH1Zlg4ycFgrldeqiWbWCiuBR8VaZ9E9Gk6q2J7qtV25dB64Pn8MpTm3lrfXTX1IcXDFyGpeq_IC9iar2ZVoEKIp5WBTEbnQPJ7oSs_JFOZFLG3AuZcfIQFM-_fHWkuktTwoqSG2_pJsQeWWWNmBXfwmq5GgcJyFwseR-2p4055NU_6YT-K9v0SuvXvdd0Rd73PGa_w1MTNKHAbN1HCdYL2gJlslY_BxCRzBLoEqliiwYBHcWBBgsn5msGvnUwdtKL2i6_7QO-W9zx4LVtB9jSzhzJjexbqGT1AgfLnUUqVSjgkTQ-yJUV2A776dGmyKBrDA3sY-6ng8MuT7MXMcHoIoWprjkdEKHLLI2jP41xFD7g1zr7N7Y3IClypDYkM2VJNt8q-M3upHR66Mh7LvmmDnAaYKzNmcY5gYP_g5fQv24A6d1ks4SAwRizOyMc84AH7GGrOqV-JocIJO67N27rHohfQFGHQ8j8Nahw6Mal7zbIgqktSgQXrqKaUkYIKGlIxXXdOAMP8mtKfRNqwG5xz2eiMrqK5KaWbwDbwr6JLkhyfYRovFUsd7OLOvqVnMkSQcJ0heYe7nUQqFx2Syq3t0TxPPE0ss3Vr9hVaH4J1WAGHkXoAF-nrSxjLA7XBggKY9wOUMgl87IS5-47OWEncKGPWhWCwqvKqbQ1B8IbuxhnWnOCL_UFdognd2Nn3Ysx-lCyEBcWWKM5p4MkcRrKxrcfx7H9htWWIJfJEUTSCf7SCs7XL1Ou7JtBeJzfolIzvKyBT2-QXBYqVbN6zdfcrO0RE_BFjf4if5VX4b0nmcDXmctmrRg4-kOUhHSw560KYa4rbLjbi1i3u8C0Z8VKRj6yXVt=w764-h1018-no?authuser=0"
+          alt="Me, 2017, pinching the Canton Tower in China">
+        <img onclick="magnify($(this).attr('src'))"
+          src="https://lh3.googleusercontent.com/-l_ulfm-1rURYS4VVlN1HrKCntn8rI-tZNcojeL5_6iDUNg6R6xH43n8TFRLOAaR7eD6nKvMbZiH8GF1EUQ3wdTSq4zs14phUJnT5LHiDwoOCUICEZXVvNSlxUbzR47sgYbSOBpIkK0sqeel9vJA9xcDS7htoXHE0VHP9wJz2WQ2-IJOLukSio9iO2Wp3PV53WKy1aPkAAhSz3-R_7nuMlMxV3dutSFPMUlDpIYdv9gH4qt4ysijDxTIltykyHKNf6d9_yiG1Q_l7xcrQe_UsEV_izonjZveE92xklLRp-BV_oOrAWn0LEZOExCEOEq-0ZsmUUlAmpe8TPCjmugagj0BStlvyemi8OzqxOSb_sqkmKLp5bx3fgPe9KwP_90wcysnGChoenKmLc6lrc4SjWaLqBK4Jq_2_21imKUB7Mi6x7mLh1YOXnC5LBoM2tGraw9fjzYkvwAvQCnuvwPtls6jwB2MGFgEy1UTu-E_LNFqtP-GlexG0WkHKf6ruRd0Kk0Tbe3WhBXCJxUCIEt33loqp-myfqDynIpHUMHFy__Wj9NIuaHh8p0uEOycU5hHQY9n9HiBKuTvawHW1igp2AztfJEaRHFkGPyDIU6dPszusBhpvQp43I3hO6V6Fr_kmXoO8VTi2WsYIT41Me0Cvf5EkAFLA3DnQig294SDTLeZVXen9bQ1XD09PfsEBfEivX6l2Qd8GgEg4_9QcLMkvuZjO6slC0Bli5UjQPGCBKTw_B50bWub9bvyK9NjeUGMR4T_XMT9rNGCf8aqwAWw_m-BZkgf5ixht5XtRlWNCX-qCsCm5JXDZKlmpHUke3Mlhl2Gybq0rx3mi6cvEnJ-p8ODYrPkWQtm9mmR8eU1FWaYC-j_y6UPJI1hN_Bh3hOTFhSFLdvZggFigISQvo8V7sklhvTE-eqsVXCEkAs9x1lEeiAU=w680-h1018-no?authuser=0"
+          alt="Me, 2018, bedroom, desk cartoonified">
+        <img onclick="magnify($(this).attr('src'))"
+          src="https://lh3.googleusercontent.com/N_qR2m2bTDtR7OZS8oaP4SOkVYPF2XkgyLMRmVQZho90B9fnrc7tUutGcTZsQgKj2E4fMTAn7mzzYc87FqObka2Nghe5PG8Rzszp4wxuMuKxZB0w6mv7JvPY8VNdInjvKN7jmU8_YMkY63ITnDoAni5gOwyKnorMN1MKcQFTXuDOJE2H6ZYUuRuQ_C4fP-MKpCGsLS-7F2SBb9xR8nsCXe_xXgxc6O4UfKn2KGgZVf57ZG84fnIewX-b2TRvuARt4qDAk-8zGqRT4Z-N9aOZ8hk5UBX9Dpq38RR9tGd5qHdblZTVQ0clkwOPb-YtO34QWbabfat9IXRQU55a-Zzj_sWX7K5h5WQWaOe0wCKiizEMwiCsiun7KYWh5oxAnSInB_I8j7klT7KvNGAk7UNCSYSgoml68ZSpWaMgiVpOvXoUbC4f8c7FdMmlqIvTvhU9Bf5S5yU7z0x-8zCLjGrTPqzgmThwRnh61QefHuuVQXvdheh4BzQvW3Wxk2GF6S9XBC26BcljQt0O6qjQWRym0WqsiCaaPZI-bWVITBbvJvlv4HdGLkUw9TY2ZbgD7j9-DRtqoYjmZvtVH5c6kiLKfV6CRhwlE6BU4dW-ZIr8KMsxSLvKR9lVWysd9QBfJhF0ycPiwIdkwKIhECawNoVAnTYPwihcCgPNfUzyDC5VJpNJy_vTETMbJHX91EOFvONZvEpR0QiVJmpYzou_EMDui9DBiEa5y4Mibmm8uhNM65x4ehJSFZ3X006ciuGBkTyh5PjTT08dX1OQa5FVfQ2nNxDo2a8EEWQZGTEMVaa2RsysQAWQoChv7K-jTRaq2YLvr74oB7EgUDQbTHEr_jOdFf5c2iH2xghkZn9kYMhAMT97_ffyKrXWyZf-Pb0qtheABN-HREz_XT5DsvgUZoZPQMneo-t9fkla3uXNFF30PreqjgTS=w727-h1018-no?authuser=0"
+          alt="Mom, 2018, ice lake with a wooden dock">
+        <img onclick="magnify($(this).attr('src'))"
+          src="https://lh3.googleusercontent.com/LaxaMDLyGmJoLLvwX1RY_CeTYQRl0k_qf7KEDUpLJUWlcKlL5EWjI8-G2Eiqi6gH2iX-39lLpog-VInWHEVUl_Zdb__5dyfCFo5P3Qw3cntiA8PNI7fDhB4unweM2KOxxxsc7EXMVvkCUHR61mRRnkrvtLDntZ-iXHxfJIrpPYUNokCP-8k3EABqjoTRAicr9sElD3_2MS6vY2pdeK0Kj1sFVLMY1cd2EAT6zevNB79ffkigvWTT6J0yI0TQTmhTEOiZ07BITanQWtZVfBGNBvsnSJPRRiXP7XuDPgJoDGxqaYXFEwxZ7aJMSXPMbw-lN8YpRM4YvOHUbM_QoAvE2MTop548wa11C_flLDzvy8nnO7L1gqnBw_RWkzBijYy24pQGMEkZdBi9L6-MTYKQZ-7YjKUCONPJgxMyfXTTBYvUQvOqoFO9YMR6g4iA3zXp248U5ToS5mbnRk8IgecitMekHYcvH1oruy9E7Csp6xsI_UmsQsW7OEVT2Tt_cZy-Y2C_fctOLRX18xUDGD3NkC0UkV7v7adybyT-SPJj5pC3kfFhJpgRHtcGVN2Bi3M-6i9qW37JpsNKQylyPtyMVMWwr3m4arGtxU_F-QbMOO8pS9jCTkmKKspR8tPGgBZy1ZQPDr5sZG66yEanzE4PhFLIuOq2rbpDtWiqUPsdVWBknFiYZ5_c-7Lesstf1sbtDE-2lXpUTg-kIpdbUZTV_zPEoeOkCURl_VWCfE_hAsxklJw4OtCwPQiolEKOPdOu7adxscRDYYDjkEzydKAqucykhi2u7xZ_Zb2zg0AJKhgOcFkeXxgi-ZOXzjvtj847Zi6hFvltxrmEH6QB81oKHmttIu4lg-TB2353VLo38e7iGF8CytVJKT-FxayPU1N0q0R1MUbBE-unJX_7ZdFnWkhHezyuFrzlbsomJMbGp9HiCAEl=w764-h1018-no?authuser=0"
+          alt="Mom, 2019, blurry christmas tree">
+        <img onclick="magnify($(this).attr('src'))"
+          src="https://lh3.googleusercontent.com/jowJjH7FSLhWK3h0ezQ87k0aD_6hBPlsiFZ8ChG8hIagFBjmR-VgP-TBrQvcE-DAAMWi6rxeIPLncFwqzOgQXO2RwzTrnPpfR2IVMY-YDqNvqTAkFR-xh5BQJd-OO7JGsrA1mlsZstTfbqszbSgB8Nzu8g09hk-gdWTpR4s6Rlm_iLclLsNzg9WG82rZU0759eWpS24Qtow4JMppySSSuV6t4M5eM_vUKXTKPb6R7_dKQNTeU8rqHZQ29kbtHvHlJfuLg9Fs9fmlHqKQeVTVmczUMSLvTO3rojDYmr-rVcMrfH51gBAJk06rahrpYkY-DcaTkDu5rwN48tgd3hMhRufN7d-7d1MgAYiX6xGTXktOHZGxsKdmKFXJ8mmprVXPdfn0O2doVzI2MmLjGsMInbTfx2GPqrFP4QB5FWFdFI-Bq8B2w8kMwpDULfly_zL9bI3KHkXIap3Woac0oOvszepbpcTs6PWWwLtsV36bcT7HurOKzVYu1zrYD2iK028ryvf6E3zUz9KFYNlEPcHeeaABcTkRMIoNuDkkIqxJmkf02F3neS5uZNT1FORiK217UuXeKQUOtStMEIIGfbqyhyoc0zN6w7w72PLWjlNmrQu-X9ZfeE52wWH63tQqy8lM23pEJaHLsgpD4XgHi5cM5FT0hRyweppeixaG_sILL9Eu_PZKKTXTPIkmLfLjk8nTkiW0-3McUrHcofpqqC2_QKi9xFGjUs1c9dFkD2_LVp2KGn5s8IgZdKoK_G2gaW4ygO1lVWSESbbcS8STVkCNTz99oDtxyhLmwo6O038Xh8iEy0IU7DZfC8hWm2SXTJywX-v85YSnoxuQFqgd2VF7ak9lZmVKajZjqignG2NPeVymM44hv0pKeQ0Zugi7W8CiXrQwYAd7Nqu4QCHwBPIzjUHRv048StwBtiLD6TdRcC8-Xpxw=w1007-h1018-no?authuser=0"
+          alt="Robot #140, 2020, girl drawing on sticky note">
       </div>
-      <div id="magnify">
-         <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
-         <div id="img_here"></div>
-      </div>
-      <div id="photo-sect" class="animate__animated animate__fadeIn" style="animation-delay:0.3s;">
-         <div id="photo-contain">
-            <div id="photos">
-               <img onclick="magnify($(this).attr('src'))" 
-                  src="https://lh3.googleusercontent.com/pw/AMWts8CKC2OqRBiDe8WFlZaOOIhUwQA3vRXckjXlJo5n305kVuhYT0r7rQKMEIy_y_Js5D53KLQj69uFhB0sJIspoXjFwIHEyS035oCsNfEhUt0AZ0G58iMUMWlvj5feCGCsct_poAmseSurvY64atCpV1OX=w1350-h1013-no"
-                  alt="Me, 2012, in fencing gear for the first time">
-               <img onclick="magnify($(this).attr('src'))" 
-                  src="https://unsplash.com/photos/ID0XfUubM_c"
-                  alt="Me, 2016, a maple syrup lolipop">
-               <img onclick="magnify($(this).attr('src'))" 
-                  src="https://lh3.googleusercontent.com/pw/AMWts8CLjNCUisMSBgRagPftPZGSOrZi2EvCIuoKVjeefAvWbJrX7NMfBqueKVUY8wymhzLC7JgXtySPv2gRVlrJN78zvzcbkgsH7B4svAJ4AxQ9LS4YOiEfYT3BKcvIDFWmzua7-L_a3NWlriXW2s3q1v2i=w1358-h1018-no?authuser=0"
-                  alt="Me, 2017, miniature broken city">
-               <img onclick="magnify($(this).attr('src'))" 
-                  src="https://lh3.googleusercontent.com/pw/AMWts8D3jfqwhpoekRz-daEWZLRXgVCwnmBbjvrEQaeQoImstTSNuMOMQcGFmYbzeKy8sw0mnWCBopye4ReYdpG8e5KKIvEZsEJVBFfXNtEY6CbQFkb3W9heYZllyNkLhJ9toaNb3Oiq_qikaHWB2Qh5KUQQ=s1018-no?authuser=0"
-                  alt="Me, 2017, black and white windmill tower">
-               <img onclick="magnify($(this).attr('src'))" 
-                  src="https://lh3.googleusercontent.com/088X3yfeg7y4NNhgaVQR5xKiSk4hoC6nJMQnrDcFxaZiaOWD3BhM5fyoOrrFuD6mq75X6Uy6cKT6I6Rj20AxH1Zlg4ycFgrldeqiWbWCiuBR8VaZ9E9Gk6q2J7qtV25dB64Pn8MpTm3lrfXTX1IcXDFyGpeq_IC9iar2ZVoEKIp5WBTEbnQPJ7oSs_JFOZFLG3AuZcfIQFM-_fHWkuktTwoqSG2_pJsQeWWWNmBXfwmq5GgcJyFwseR-2p4055NU_6YT-K9v0SuvXvdd0Rd73PGa_w1MTNKHAbN1HCdYL2gJlslY_BxCRzBLoEqliiwYBHcWBBgsn5msGvnUwdtKL2i6_7QO-W9zx4LVtB9jSzhzJjexbqGT1AgfLnUUqVSjgkTQ-yJUV2A776dGmyKBrDA3sY-6ng8MuT7MXMcHoIoWprjkdEKHLLI2jP41xFD7g1zr7N7Y3IClypDYkM2VJNt8q-M3upHR66Mh7LvmmDnAaYKzNmcY5gYP_g5fQv24A6d1ks4SAwRizOyMc84AH7GGrOqV-JocIJO67N27rHohfQFGHQ8j8Nahw6Mal7zbIgqktSgQXrqKaUkYIKGlIxXXdOAMP8mtKfRNqwG5xz2eiMrqK5KaWbwDbwr6JLkhyfYRovFUsd7OLOvqVnMkSQcJ0heYe7nUQqFx2Syq3t0TxPPE0ss3Vr9hVaH4J1WAGHkXoAF-nrSxjLA7XBggKY9wOUMgl87IS5-47OWEncKGPWhWCwqvKqbQ1B8IbuxhnWnOCL_UFdognd2Nn3Ysx-lCyEBcWWKM5p4MkcRrKxrcfx7H9htWWIJfJEUTSCf7SCs7XL1Ou7JtBeJzfolIzvKyBT2-QXBYqVbN6zdfcrO0RE_BFjf4if5VX4b0nmcDXmctmrRg4-kOUhHSw560KYa4rbLjbi1i3u8C0Z8VKRj6yXVt=w764-h1018-no?authuser=0"
-                  alt="Me, 2017, pinching the Canton Tower in China">
-               <img onclick="magnify($(this).attr('src'))" 
-                  src="https://lh3.googleusercontent.com/-l_ulfm-1rURYS4VVlN1HrKCntn8rI-tZNcojeL5_6iDUNg6R6xH43n8TFRLOAaR7eD6nKvMbZiH8GF1EUQ3wdTSq4zs14phUJnT5LHiDwoOCUICEZXVvNSlxUbzR47sgYbSOBpIkK0sqeel9vJA9xcDS7htoXHE0VHP9wJz2WQ2-IJOLukSio9iO2Wp3PV53WKy1aPkAAhSz3-R_7nuMlMxV3dutSFPMUlDpIYdv9gH4qt4ysijDxTIltykyHKNf6d9_yiG1Q_l7xcrQe_UsEV_izonjZveE92xklLRp-BV_oOrAWn0LEZOExCEOEq-0ZsmUUlAmpe8TPCjmugagj0BStlvyemi8OzqxOSb_sqkmKLp5bx3fgPe9KwP_90wcysnGChoenKmLc6lrc4SjWaLqBK4Jq_2_21imKUB7Mi6x7mLh1YOXnC5LBoM2tGraw9fjzYkvwAvQCnuvwPtls6jwB2MGFgEy1UTu-E_LNFqtP-GlexG0WkHKf6ruRd0Kk0Tbe3WhBXCJxUCIEt33loqp-myfqDynIpHUMHFy__Wj9NIuaHh8p0uEOycU5hHQY9n9HiBKuTvawHW1igp2AztfJEaRHFkGPyDIU6dPszusBhpvQp43I3hO6V6Fr_kmXoO8VTi2WsYIT41Me0Cvf5EkAFLA3DnQig294SDTLeZVXen9bQ1XD09PfsEBfEivX6l2Qd8GgEg4_9QcLMkvuZjO6slC0Bli5UjQPGCBKTw_B50bWub9bvyK9NjeUGMR4T_XMT9rNGCf8aqwAWw_m-BZkgf5ixht5XtRlWNCX-qCsCm5JXDZKlmpHUke3Mlhl2Gybq0rx3mi6cvEnJ-p8ODYrPkWQtm9mmR8eU1FWaYC-j_y6UPJI1hN_Bh3hOTFhSFLdvZggFigISQvo8V7sklhvTE-eqsVXCEkAs9x1lEeiAU=w680-h1018-no?authuser=0"
-                  alt="Me, 2018, bedroom, desk cartoonified">
-               <img onclick="magnify($(this).attr('src'))" 
-                  src="https://lh3.googleusercontent.com/N_qR2m2bTDtR7OZS8oaP4SOkVYPF2XkgyLMRmVQZho90B9fnrc7tUutGcTZsQgKj2E4fMTAn7mzzYc87FqObka2Nghe5PG8Rzszp4wxuMuKxZB0w6mv7JvPY8VNdInjvKN7jmU8_YMkY63ITnDoAni5gOwyKnorMN1MKcQFTXuDOJE2H6ZYUuRuQ_C4fP-MKpCGsLS-7F2SBb9xR8nsCXe_xXgxc6O4UfKn2KGgZVf57ZG84fnIewX-b2TRvuARt4qDAk-8zGqRT4Z-N9aOZ8hk5UBX9Dpq38RR9tGd5qHdblZTVQ0clkwOPb-YtO34QWbabfat9IXRQU55a-Zzj_sWX7K5h5WQWaOe0wCKiizEMwiCsiun7KYWh5oxAnSInB_I8j7klT7KvNGAk7UNCSYSgoml68ZSpWaMgiVpOvXoUbC4f8c7FdMmlqIvTvhU9Bf5S5yU7z0x-8zCLjGrTPqzgmThwRnh61QefHuuVQXvdheh4BzQvW3Wxk2GF6S9XBC26BcljQt0O6qjQWRym0WqsiCaaPZI-bWVITBbvJvlv4HdGLkUw9TY2ZbgD7j9-DRtqoYjmZvtVH5c6kiLKfV6CRhwlE6BU4dW-ZIr8KMsxSLvKR9lVWysd9QBfJhF0ycPiwIdkwKIhECawNoVAnTYPwihcCgPNfUzyDC5VJpNJy_vTETMbJHX91EOFvONZvEpR0QiVJmpYzou_EMDui9DBiEa5y4Mibmm8uhNM65x4ehJSFZ3X006ciuGBkTyh5PjTT08dX1OQa5FVfQ2nNxDo2a8EEWQZGTEMVaa2RsysQAWQoChv7K-jTRaq2YLvr74oB7EgUDQbTHEr_jOdFf5c2iH2xghkZn9kYMhAMT97_ffyKrXWyZf-Pb0qtheABN-HREz_XT5DsvgUZoZPQMneo-t9fkla3uXNFF30PreqjgTS=w727-h1018-no?authuser=0"
-                  alt="Mom, 2018, ice lake with a wooden dock">
-               <img onclick="magnify($(this).attr('src'))" 
-                  src="https://lh3.googleusercontent.com/LaxaMDLyGmJoLLvwX1RY_CeTYQRl0k_qf7KEDUpLJUWlcKlL5EWjI8-G2Eiqi6gH2iX-39lLpog-VInWHEVUl_Zdb__5dyfCFo5P3Qw3cntiA8PNI7fDhB4unweM2KOxxxsc7EXMVvkCUHR61mRRnkrvtLDntZ-iXHxfJIrpPYUNokCP-8k3EABqjoTRAicr9sElD3_2MS6vY2pdeK0Kj1sFVLMY1cd2EAT6zevNB79ffkigvWTT6J0yI0TQTmhTEOiZ07BITanQWtZVfBGNBvsnSJPRRiXP7XuDPgJoDGxqaYXFEwxZ7aJMSXPMbw-lN8YpRM4YvOHUbM_QoAvE2MTop548wa11C_flLDzvy8nnO7L1gqnBw_RWkzBijYy24pQGMEkZdBi9L6-MTYKQZ-7YjKUCONPJgxMyfXTTBYvUQvOqoFO9YMR6g4iA3zXp248U5ToS5mbnRk8IgecitMekHYcvH1oruy9E7Csp6xsI_UmsQsW7OEVT2Tt_cZy-Y2C_fctOLRX18xUDGD3NkC0UkV7v7adybyT-SPJj5pC3kfFhJpgRHtcGVN2Bi3M-6i9qW37JpsNKQylyPtyMVMWwr3m4arGtxU_F-QbMOO8pS9jCTkmKKspR8tPGgBZy1ZQPDr5sZG66yEanzE4PhFLIuOq2rbpDtWiqUPsdVWBknFiYZ5_c-7Lesstf1sbtDE-2lXpUTg-kIpdbUZTV_zPEoeOkCURl_VWCfE_hAsxklJw4OtCwPQiolEKOPdOu7adxscRDYYDjkEzydKAqucykhi2u7xZ_Zb2zg0AJKhgOcFkeXxgi-ZOXzjvtj847Zi6hFvltxrmEH6QB81oKHmttIu4lg-TB2353VLo38e7iGF8CytVJKT-FxayPU1N0q0R1MUbBE-unJX_7ZdFnWkhHezyuFrzlbsomJMbGp9HiCAEl=w764-h1018-no?authuser=0"
-                  alt="Mom, 2019, blurry christmas tree">
-               <img onclick="magnify($(this).attr('src'))" 
-                  src="https://lh3.googleusercontent.com/jowJjH7FSLhWK3h0ezQ87k0aD_6hBPlsiFZ8ChG8hIagFBjmR-VgP-TBrQvcE-DAAMWi6rxeIPLncFwqzOgQXO2RwzTrnPpfR2IVMY-YDqNvqTAkFR-xh5BQJd-OO7JGsrA1mlsZstTfbqszbSgB8Nzu8g09hk-gdWTpR4s6Rlm_iLclLsNzg9WG82rZU0759eWpS24Qtow4JMppySSSuV6t4M5eM_vUKXTKPb6R7_dKQNTeU8rqHZQ29kbtHvHlJfuLg9Fs9fmlHqKQeVTVmczUMSLvTO3rojDYmr-rVcMrfH51gBAJk06rahrpYkY-DcaTkDu5rwN48tgd3hMhRufN7d-7d1MgAYiX6xGTXktOHZGxsKdmKFXJ8mmprVXPdfn0O2doVzI2MmLjGsMInbTfx2GPqrFP4QB5FWFdFI-Bq8B2w8kMwpDULfly_zL9bI3KHkXIap3Woac0oOvszepbpcTs6PWWwLtsV36bcT7HurOKzVYu1zrYD2iK028ryvf6E3zUz9KFYNlEPcHeeaABcTkRMIoNuDkkIqxJmkf02F3neS5uZNT1FORiK217UuXeKQUOtStMEIIGfbqyhyoc0zN6w7w72PLWjlNmrQu-X9ZfeE52wWH63tQqy8lM23pEJaHLsgpD4XgHi5cM5FT0hRyweppeixaG_sILL9Eu_PZKKTXTPIkmLfLjk8nTkiW0-3McUrHcofpqqC2_QKi9xFGjUs1c9dFkD2_LVp2KGn5s8IgZdKoK_G2gaW4ygO1lVWSESbbcS8STVkCNTz99oDtxyhLmwo6O038Xh8iEy0IU7DZfC8hWm2SXTJywX-v85YSnoxuQFqgd2VF7ak9lZmVKajZjqignG2NPeVymM44hv0pKeQ0Zugi7W8CiXrQwYAd7Nqu4QCHwBPIzjUHRv048StwBtiLD6TdRcC8-Xpxw=w1007-h1018-no?authuser=0"
-                  alt="Robot #140, 2020, girl drawing on sticky note">
-            </div>
-         </div>
-      </div>
-
-      
-  <style>
-   @media screen and (max-width: 600px) {
-     .circle-button {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-     }
-   }
-
-   @media screen and (min-width: 601px) {
-     .circle-button {
-       display: none;
-     }
-   }
-
-   .circle-button {
-     position: fixed;
-     bottom: 20px;
-     right: 20px;
-     width: 50px;
-     height: 50px;
-     border-radius: 50%;
-     background-color: rgb(80, 80, 80);
-     transition: all 0.3s ease-in-out;
-     z-index: 1;
-   }
-
-   .circle-button:hover {
-     cursor: pointer;
-     /* Change the mouse cursor to a pointer on hover */
-   }
-
-   .circle-button .line {
-     position: absolute;
-     width: 30px;
-     height: 3px;
-     background-color: white;
-     transition: transform 0.3s ease-in-out;
-   }
-
-   .circle-button .line:nth-child(1) {
-     transform: translateY(-3px);
-   }
-
-   .circle-button .line:nth-child(2) {
-     transform: translateY(3px);
-   }
-
-   .circle-button.close .line:nth-child(1) {
-     transform: rotate(45deg) translate(0px, 0px);
-   }
-
-   .circle-button.close .line:nth-child(2) {
-     transform: rotate(-45deg) translate(0px, 0px);
-   }
-
-   .menu {
-     position: fixed;
-     bottom: 20px;
-     right: 20px;
-     width: 250px;
-     height: 330px;
-     background-color: rgba(80, 80, 80, 0.98);
-     opacity: 0;
-     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-     border-radius: 10px;
-     transform-origin: bottom right;
-     transform: scale(0);
-   }
-
-   .menu.show {
-     opacity: 1;
-     transform: scale(1);
-     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-   }
-
-   .menu ul {
-     list-style: none;
-     margin: 0;
-     padding: 0;
-   }
-
-   .menu li {
-     margin: 10px;
-   }
-
-   .menu button {
-      font-size: 14px;
-      font-family: "atkinson-bold", sans-serif;
-      color: #809fff;
-      background: transparent;
-      border: 3px solid #809fff;
-      padding: 8px 2px;
-      width: 100%;
-      border-radius: 80px;
-      font-weight: bold;
-      transition: 0.4s ease-in-out;
-      text-align: center;
-      align-items: center;
-    }
-
-    .menu button:last-child {
-      margin-bottom: 0;
-    }
-
-    .menu button:hover {
-      cursor: pointer;
-      color: #fff;
-      background: #809fff;
-      cursor: pointer;
-    }
-
-    .menu ul li#logo {
-      align-items: center;
-      text-align: center;
-      font-size: 20px;
-      font-family: "atkinson-bold", sans-serif;
-      color: #809fff;
-      margin-bottom: 20px;
-      padding-left: 40px;
-      padding-top: 10px;
-    }
-  </style>
+    </div>
+  </div>
 
   <div class="circle-button">
     <div class="line"></div>
@@ -229,53 +105,38 @@
       <li><button onclick="location.href='/index.html'">Home</button></li>
       <li><button onclick="location.href='/career.html'">Career</button></li>
       <li><button onclick="location.href='/stuff.html'" style="text-decoration:none">Stuff</button></li>
-      <li><button onclick="location.href='/contact.html'" style="text-decoration:none">Contact</button></li>
     </ul>
   </div>
 
- <script>
-   const circleButton = document.querySelector('.circle-button');
-   const menu = document.querySelector('.menu');
+  <!-- Back-to-top button -->
+  <button id="back-to-top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  <!-- Footer -->
+  <div id="footer">
+    <div>
+      <a href="mailto:wmwwebemail@gmail.com" class="social">
+        <i class="fa-solid fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/williammawang" class="social">
+        <i class="fa-brands fa-linkedin"></i></a>
+      <a href="/pages/photos.html" class="social">
+        <i class="fa-solid fa-image"></i></a>
+      <a href="https://github.com/Chinesegala" class="social">
+        <i class="fab fa-github"></i></a>
+      <a href="https://open.spotify.com/user/21zdwau7mfrwuuywowr5uczci" class="social">
+        <i class="fa-brands fa-spotify"></i></a>
+    </div>
+    <div>&nbsp;</div>
+    © 2024 williammawang.<br>
+    <a href="/site.html">How i made this website</a>
+  </div>
+  <!-- Script import: https://levelup.gitconnected.com/all-about-script-87fea475b976 -->
+  <script src="/src/js/photos.js"></script>
+  <script src="/src/js/universal.js"></script>
+  <script async src="//static.getclicky.com/101402491.js"></script>
+  <noscript>
+    <p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101402491ns.gif" /></p>
+  </noscript>
+</body>
 
-   circleButton.addEventListener('click', () => {
-     circleButton.classList.toggle('close');
-     menu.classList.toggle('show');
-   });
-
-   document.addEventListener('click', (event) => {
-     if (!menu.contains(event.target) && !circleButton.contains(event.target)) {
-       circleButton.classList.remove('close');
-       menu.classList.remove('show');
-     }
-   });
- </script>
-
-      <!-- Back-to-top button -->
-      <button id="back-to-top" title="Back to top">
-      <i class="fa-solid fa-arrow-up"></i>
-      </button>
-      <!-- Footer -->
-      <div id="footer">
-         <div>
-            <a href="mailto:wmwwebemail@gmail.com" class="social">
-            <i class="fa-solid fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/williammawang" class="social">
-            <i class="fa-brands fa-linkedin"></i></a>
-            <a href="/pages/photos.html" class="social">
-            <i class="fa-solid fa-image"></i></a>
-            <a href="https://github.com/Chinesegala" class="social">
-            <i class="fab fa-github"></i></a>
-            <a href="https://open.spotify.com/user/21zdwau7mfrwuuywowr5uczci" class="social">
-            <i class="fa-brands fa-spotify"></i></a>
-         </div>
-         <div>&nbsp;</div>
-         © 2024 williammawang.<br>
-         <a href="/site.html">How i made this website</a>
-      </div>
-      <!-- Script import: https://levelup.gitconnected.com/all-about-script-87fea475b976 -->
-      <script src="/src/js/photos.js"></script>
-      <script src="/src/js/universal.js"></script>
-      <script async src="//static.getclicky.com/101402491.js"></script>
-      <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101402491ns.gif" /></p></noscript>
-   </body>
 </html>
