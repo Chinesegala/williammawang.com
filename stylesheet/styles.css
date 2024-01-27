@@ -576,3 +576,30 @@ button:focus {
   padding-left: 40px;
   padding-top: 10px;
 }
+
+/* Define a mobile navigation header */
+.mobile-nav {
+  display: none;
+  background-color: #262525; /* Changed to match your website's design */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-family: "atkinson-bold", sans-serif; /* Added to match your website's design */
+  position: fixed; /* Added to fix the header at the top of the screen */
+  top: 0; /* Added to position the header at the top */
+  width: 100%; /* Added to make the header span the full width of the screen */
+  z-index: 1000; /* Added to ensure the header is always on top */
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Show the mobile navigation header when the viewport is 600px or less */
+@media screen and (max-width: 600px) {
+  .mobile-nav {
+    display: block;
+  }
+}
