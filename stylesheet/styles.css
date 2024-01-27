@@ -34,6 +34,9 @@ body a {
 p {
   font-size: 1.1rem;
 }
+.padded-bottom {
+  padding-bottom: 3vh;
+}
 h1#first-body-header {
   margin-block-start: 0px !important;
   margin-top: 100px;
@@ -142,21 +145,21 @@ div#entry {
 }
 #hello {
   font-family: "atkinson-bold", sans-serif;
-  width: 84% !important;
+  width: 84%;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  padding: 0px 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 #hello h1 {
   font-size: 60px;
   word-wrap: break-word;
 }
 #hello table {
-  width: 70%;
-  margin-top: 4vh;
+  width: 80%;
+  margin-top: 5vh;
 }
 #hello table tr td {
   width: 20% !important;
@@ -188,7 +191,7 @@ div#entry {
   color: #809fff;
   background: transparent;
   border: 3px solid #809fff;
-  padding: 8px 20px;
+  padding: 10px 50px;
   width: 20%;
   border-radius: 80px;
   font-weight: bold;
@@ -316,6 +319,10 @@ button:focus {
     font-size: 40px;
     word-wrap: break-word;
   }
+  #hello table {
+    width: 100%;
+    margin-top: 5vh;
+  }
 
   #photos {
     columns: 1;
@@ -339,7 +346,6 @@ button:focus {
   table#entry tr td#hello {
     max-width: 100%;
     text-align: center;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -353,11 +359,12 @@ button:focus {
     text-align: center;
   }
   #hello {
+    width: 100vw;
     height: 100vh;
-    text-align: center;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   #hello table tr td {
     text-align: center;
@@ -366,15 +373,15 @@ button:focus {
     padding: 6px 30px;
     width: 25%;
     margin: 4vh auto;
-    box-shadow: 0px 10px 20px rgba(128, 159, 255, 0.8);
     background: transparent;
     color: #fff;
     text-align: center;
   }
   .main_btn:hover {
-    box-shadow: 0px 10px 40px rgba(128, 159, 255, 0.8);
+    background: transparent;
     cursor: pointer;
-  } /*
+  }
+  /*
 	Sections
 	*/
   #section-list {
@@ -388,8 +395,8 @@ button:focus {
     font-weight: bolder;
   }
   div.sectbubble {
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
     display: block;
     flex-wrap: wrap;
     border-radius: 25px;
